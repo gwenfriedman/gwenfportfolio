@@ -38,29 +38,41 @@ const Header = (props) => {
                 </NavItem>
             </Link>
 
-            <NavItem>
-              <NavLink href="/webdesign">Web Design</NavLink>
-            </NavItem>
+            <Link to={`/webdesign`}>
+                <NavItem>
+                  <NavLink href="/webdesign">Web Design</NavLink>
+                </NavItem>
+            </Link>
 
-            <NavItem>
-              <NavLink href="/sewing">Sewing</NavLink>
-            </NavItem>
+            <Link to={`/sewing`}>
+                <NavItem>
+                  <NavLink href="/sewing">Sewing</NavLink>
+                </NavItem>
+            </Link>
 
-            <NavItem>
-              <NavLink href="/Embroidery">Embroidery</NavLink>
-            </NavItem>
+            <Link to={`/embroidery`}>
+                <NavItem>
+                  <NavLink href="/Embroidery">Embroidery</NavLink>
+                </NavItem>
+            </Link>
 
-            <NavItem>
-              <NavLink href="/branding">Branding</NavLink>
-            </NavItem>
+            <Link to={`/branding`}>
+                <NavItem>
+                  <NavLink href="/branding">Branding</NavLink>
+                </NavItem>
+            </Link>
 
-            <NavItem>
-              <NavLink href="/photography">Photos</NavLink>
-            </NavItem>
+            <Link to={`/photography`}>
+                <NavItem>
+                  <NavLink href="/photography">Photos</NavLink>
+                </NavItem>
+            </Link>
 
-            <NavItem>
-              <NavLink href="/about">About</NavLink>
-            </NavItem>
+            <Link to={`/about`}>
+                <NavItem>
+                  <NavLink href="/about">About</NavLink>
+                </NavItem>
+            </Link>
 
           </Nav>
         </Collapse>
