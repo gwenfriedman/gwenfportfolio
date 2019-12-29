@@ -31,36 +31,35 @@ const Header = (props) => {
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
-            <NavItem>
-              <NavLink href="/graphicart/">Graphic Art</NavLink>
-            </NavItem>
 
             <Link to={`/graphicart`}>
-                <h1> graphic art 2</h1>
+                <NavItem>
+                  <NavLink href="/graphicart/">Graphic Art</NavLink>
+                </NavItem>
             </Link>
 
             <NavItem>
-              <NavLink href="/webdesign/">Web Design</NavLink>
+              <NavLink href="/webdesign">Web Design</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/sewing/">Sewing</NavLink>
+              <NavLink href="/sewing">Sewing</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/Embroidery/">Embroidery</NavLink>
+              <NavLink href="/Embroidery">Embroidery</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/branding/">Branding</NavLink>
+              <NavLink href="/branding">Branding</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/photography/">Photos</NavLink>
+              <NavLink href="/photography">Photos</NavLink>
             </NavItem>
 
             <NavItem>
-              <NavLink href="/about/">About</NavLink>
+              <NavLink href="/about">About</NavLink>
             </NavItem>
 
           </Nav>
