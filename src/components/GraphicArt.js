@@ -1,8 +1,15 @@
 import React from 'react';
+import Home from './Home.js'
+
 
 class GraphicArt extends React.Component {
  render() { return(
-   <h1>Graphic Art</h1>)
+    <div>
+        <Home/>
+
+       <h1 className="container-fluid mt-3">Graphic Art</h1>
+   </div>
+   )
  }
 }
 export default GraphicArt;
