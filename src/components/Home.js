@@ -14,6 +14,11 @@ import {
   NavbarText
 } from 'reactstrap';
 
+import {Link} from "react-router-dom";
+
+
+
+
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -29,6 +34,10 @@ const Header = (props) => {
             <NavItem>
               <NavLink href="/graphicart/">Graphic Art</NavLink>
             </NavItem>
+
+            <Link to={`/graphicart`}>
+                <h1> graphic art 2</h1>
+            </Link>
 
             <NavItem>
               <NavLink href="/webdesign/">Web Design</NavLink>
