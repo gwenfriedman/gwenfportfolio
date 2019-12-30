@@ -27,14 +27,19 @@ const Header = (props) => {
   return (
     <div>
       <Navbar color="light" light expand="md">
-        <NavbarBrand href="/">Gwen Friedman</NavbarBrand>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
 
             <Link to={`/graphicart`}>
                 <NavItem>
-                  <NavLink href="/graphicart/">Graphic Art</NavLink>
+                  <NavLink href="/graphicart/">Poster Design</NavLink>
+                </NavItem>
+            </Link>
+
+            <Link to={`/drawings`}>
+                <NavItem>
+                  <NavLink href="/drawings/">Digital Drawings</NavLink>
                 </NavItem>
             </Link>
 

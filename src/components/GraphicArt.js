@@ -24,7 +24,7 @@ class GraphicArt extends React.Component {
  render() { return(
     <div>
         <Home/>
-        <h1 className="text-center mt-4"> Graphic Art </h1>
+        <h1 className="text-center mt-4"> Poster Design </h1>
 
         <div className="row justify-content-md-center mt-4">
           <div className="col-md-4 col-6">
@@ -41,6 +41,23 @@ class GraphicArt extends React.Component {
           </div>
         </div>
 
+
+        <div className="row justify-content-md-center mt-4">
+          <div className="col-md-4 col-6">
+                <img className="col" src={s3}/>
+                <div class="col caption mt-1">
+                  <p> Poster for Sofar Sounds Boston show on March 29.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+                <img className="col" src={s4}/>
+                <div class="col caption mt-1">
+                  <p>Poster for Sofar Sounds Boston show on March 27.</p>
+                </div>
+          </div>
+        </div>
+
+
         <div className="row justify-content-md-center mt-4">
           <div className="col-md-4 col-6">
                 <img className="col" src={s5}/>
@@ -49,10 +66,100 @@ class GraphicArt extends React.Component {
             </div>
           </div>
           <div class="col-md-4 col-6">
-                <img className="col" src={s4}/>
+                <img className="col" src={s6}/>
                 <div class="col caption mt-1">
                   <p>Poster for Sofar Sounds Boston show on March 27.</p>
                 </div>
+          </div>
+        </div>
+
+
+        <div className="row justify-content-md-center mt-4">
+          <div className="col-md-4 col-6">
+                <img className="col" src={s7}/>
+                <div class="col caption mt-1">
+                  <p> Poster for Sofar Sounds Boston show on April 18.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+                <img className="col border" src={s8}/>
+                <div class="col caption mt-1">
+                  <p>Poster for Sofar Sounds Boston show on March 8.</p>
+                </div>
+          </div>
+        </div>
+
+
+        <div className="row justify-content-md-center mt-4">
+          <div className="col-md-4 col-6">
+                <img className="col" src={s9}/>
+                <div class="col caption mt-1">
+                  <p> Poster for Sofar Sounds Boston show on April 5.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+                <img className="col border" src={s10}/>
+                <div class="col caption mt-1">
+                  <p>Poster for Sofar Sounds Boston show on April 3.</p>
+                </div>
+          </div>
+        </div>
+
+
+        <div className="row justify-content-md-center mt-4">
+          <div className="col-md-4 col-6">
+                <img className="col" src={s11}/>
+                <div class="col caption mt-1">
+                  <p> Poster for Sofar Sounds Boston show on September 5.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+                <img className="col" src={s12}/>
+                <div class="col caption mt-1">
+                  <p>Poster for Sofar Sounds Boston show on November 16.</p>
+                </div>
+          </div>
+        </div>
+
+
+        <div className="row justify-content-md-center mt-4">
+          <div className="col-md-4 col-6">
+                <img className="col" src={s13}/>
+                <div class="col caption mt-1">
+                  <p> Poster for Sofar Sounds Boston show.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+                <img className="col" src={s14}/>
+                <div class="col caption mt-1">
+                  <p>Poster for Sofar Sounds Boston show on March 26.</p>
+                </div>
+          </div>
+        </div>
+
+
+        <div className="row justify-content-md-center mt-4">
+          <div className="col-md-4 col-6">
+                <img className="col border" src={s15}/>
+                <div class="col caption mt-1">
+                  <p> Poster for Sofar Sounds Boston show on February 12.</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-6">
+                <img className="col" src={s16}/>
+                <div class="col caption mt-1">
+                  <p>Poster for Sofar Sounds Boston show on February 6.</p>
+                </div>
+          </div>
+        </div>
+
+
+        <div className="row justify-content-md-center mt-4">
+          <div className="col-md-4 col-6">
+                <img className="col" src={s17}/>
+                <div class="col caption mt-1">
+                  <p> Poster for Typography 1 class for a Mahler show at the BSO.</p>
+            </div>
           </div>
         </div>
 

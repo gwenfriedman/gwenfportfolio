@@ -10,6 +10,7 @@ import Branding from './components/Branding.js'
 import Embroidery from './components/Embroidery.js'
 import Photos from './components/Photos.js'
 import Sewing from './components/Sewing.js'
+import Drawings from './components/Drawings.js'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import {BrowserRouter as Router, Route} from "react-router-dom";
@@ -24,6 +25,9 @@ function App() {
 
             <Route exact path='/graphicart'
              component={GraphicArt}/>
+
+             <Route exact path='/drawings'
+              component={Drawings}/>
 
              <Route exact path='/webdesign'
               component={WebDesign}/>
