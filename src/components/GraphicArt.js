@@ -17,6 +17,7 @@ import s14 from './images/GA/sofar-3.26.jpg';
 import s15 from './images/GA/sofar-2.14.jpg';
 import s16 from './images/GA/sofar-2.6.jpg';
 import s17 from './images/GA/mahler.jpg';
+import SimpleReactLightbox from "simple-react-lightbox";
 
 
 
@@ -24,8 +25,7 @@ class GraphicArt extends React.Component {
  render() { return(
     <div>
         <Home/>
-        <h1 className="text-center mt-4"> Poster Design </h1>
-
+        <h1 className="text-center mt-5"> Poster Design </h1>
         <div className="row justify-content-md-center mt-4">
           <div className="col-md-4 col-6">
                 <img className="col" src={s1}/>
@@ -162,8 +162,6 @@ class GraphicArt extends React.Component {
             </div>
           </div>
         </div>
-
-
     </div>
    )
  }

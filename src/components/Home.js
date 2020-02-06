@@ -15,9 +15,8 @@ import {
 } from 'reactstrap';
 
 import {Link} from "react-router-dom";
-
-
-
+import header from './images/Header.png';
+import './Home.css';
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,12 +24,14 @@ const Header = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
-      <Navbar color="light" light expand="md">
+    <div className="header">
+      <div>
+        <img src={header} className='header-img'/>
+      </div>
+      <Navbar light expand="md" className='nav'>
         <NavbarToggler onClick={toggle} />
         <Collapse isOpen={isOpen} navbar>
-          <Nav className="mr-auto" navbar>
-
+          <Nav className="ml-auto" navbar>
             <Link to={`/graphicart`}>
                 <NavItem>
                   <NavLink href="/graphicart/">Poster Design</NavLink>
