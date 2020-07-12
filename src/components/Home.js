@@ -34,7 +34,7 @@ const Header = (props) => {
           <Nav className="ml-auto" navbar>
             <Link to={`/graphicart`}>
                 <NavItem>
-                  <NavLink href="/graphicart/">Poster Design</NavLink>
+                  <NavLink href="/graphicart/">Poster</NavLink>
                 </NavItem>
             </Link>
 

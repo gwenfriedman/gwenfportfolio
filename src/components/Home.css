@@ -1,5 +1,5 @@
 .nav { position: relative; }
-.header-img { position: absolute; top: 0; left: 0;}
+.header-img { position: absolute; top: 0; left: 0; width: 100%; height: auto;}
 
 .header {
 padding-bottom: 75px;
