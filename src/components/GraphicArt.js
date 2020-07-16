@@ -17,8 +17,6 @@ import s14 from './images/GA/sofar-3.26.jpg';
 import s15 from './images/GA/sofar-2.14.jpg';
 import s16 from './images/GA/sofar-2.6.jpg';
 import s17 from './images/GA/mahler.jpg';
-import SimpleReactLightbox from "simple-react-lightbox";
-
 
 class GraphicArt extends React.Component {
  render() { return(
