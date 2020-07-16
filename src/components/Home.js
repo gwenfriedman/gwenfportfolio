@@ -1,90 +1,117 @@
-import React, { useState } from 'react';
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText
-} from 'reactstrap';
-
+import React from 'react';
 import {Link} from "react-router-dom";
-import header from './images/Header.png';
 import './Home.css';
 
-const Header = (props) => {
-  const [isOpen, setIsOpen] = useState(false);
+class Header extends React.Component {
+    render() {
+            return (
+                <div>
+                    <div className={'d-none d-sm-none d-md-block'}>
+                    <h1 className={'header'}> Gwendolyn Friedman </h1>
+                    <div className={'underline'}></div>
+                    <div className={'menu'}>
+                        <div className='hover-button'>
+                            <div>
+                                <div className={'hover-button--off block red'}></div>
+                            </div>
+                            <div>
+                                <Link to={`/graphicart`}>
+                                    <div className={'hover-button--on block-expand red'}>Posters</div>
+                                </Link>
+                            </div>
+                        </div>
 
-  const toggle = () => setIsOpen(!isOpen);
+                        <div className='hover-button'>
+                            <div>
+                                <div className={'hover-button--off block pink'}></div>
+                            </div>
+                            <div>
+                                <Link to={`/drawings`}>
+                                    <div className={'hover-button--on block-expand pink'}>Digital Drawings</div>
+                                </Link>
+                            </div>
+                        </div>
 
-  return (
-    <div className="header">
-      <div>
-        <img src={header} className='header-img'/>
-      </div>
-      <Navbar light expand="md" className='nav'>
-        <NavbarToggler onClick={toggle} />
-        <Collapse isOpen={isOpen} navbar>
-          <Nav className="ml-auto" navbar>
-            <Link to={`/graphicart`}>
-                <NavItem>
-                  <NavLink href="/graphicart/">Poster</NavLink>
-                </NavItem>
-            </Link>
+                        <div className='hover-button'>
+                            <div>
+                                <div className={'hover-button--off block yellow'}></div>
+                            </div>
+                            <div>
+                                <Link to={`/branding`}>
+                                    <div className={'hover-button--on block-expand yellow'}>Branding</div>
+                                </Link>
+                            </div>
+                        </div>
 
-            <Link to={`/drawings`}>
-                <NavItem>
-                  <NavLink href="/drawings/">Digital Drawings</NavLink>
-                </NavItem>
-            </Link>
+                        <div className='hover-button'>
+                            <div>
+                                <div className={'hover-button--off block green'}></div>
+                            </div>
+                            <div>
+                                <Link to={`/sewing`}>
+                                    <div className={'hover-button--on block-expand green'}>Sewing</div>
+                                </Link>
+                            </div>
+                        </div>
 
-            <Link to={`/webdesign`}>
-                <NavItem>
-                  <NavLink href="/webdesign">Web Design</NavLink>
-                </NavItem>
-            </Link>
+                        <div className='hover-button'>
+                            <div>
+                                <div className={'hover-button--off block light-blue'}></div>
+                            </div>
+                            <div>
+                                <Link to={`/webdesign`}>
+                                    <div className={'hover-button--on block-expand light-blue'}>Web Design</div>
+                                </Link>
+                            </div>
+                        </div>
 
-            <Link to={`/sewing`}>
-                <NavItem>
-                  <NavLink href="/sewing">Sewing</NavLink>
-                </NavItem>
-            </Link>
+                        <div className='hover-button'>
+                            <div>
+                                <div className={'hover-button--off block dark-blue'}></div>
+                            </div>
+                            <div>
+                                <Link to={`/embroidery`}>
+                                    <div className={'hover-button--on block-expand dark-blue'}>Embroidery</div>
+                                </Link>
+                            </div>
+                        </div>
+                        <div className='hover-button'>
 
-            <Link to={`/embroidery`}>
-                <NavItem>
-                  <NavLink href="/Embroidery">Embroidery</NavLink>
-                </NavItem>
-            </Link>
 
-            <Link to={`/branding`}>
-                <NavItem>
-                  <NavLink href="/branding">Branding</NavLink>
-                </NavItem>
-            </Link>
+                            <div>
+                                <div className={'hover-button--off block black'}></div>
+                            </div>
+                            <div>
+                                <Link to={`/about`}>
+                                    <div className={'hover-button--on block-expand black'}>About</div>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                <div className={'d-sm-block d-md-none'}>
+                    <h1 className={'mobile-head'}> Gwendolyn Friedman </h1>
+                    <div className={'underline-mobile'}></div>
 
-            <Link to={`/photography`}>
-                <NavItem>
-                  <NavLink href="/photography">Photos</NavLink>
-                </NavItem>
-            </Link>
 
-            <Link to={`/about`}>
-                <NavItem>
-                  <NavLink href="/about">About</NavLink>
-                </NavItem>
-            </Link>
+                    <Link to={`/mobilemenu`}>
+                <div className={'menu mobile-menu'}>
+                    <div>
+                        <div className={'hamburger red'}></div>
+                    </div>
+                    <div>
+                        <div className={'hamburger pink'}></div>
+                    </div>
+                    <div>
+                        <div className={'hamburger light-blue'}></div>
+                    </div>
+                </div>
+                    </Link>
+                </div>
+                </div>
 
-          </Nav>
-        </Collapse>
-      </Navbar>
-    </div>
-  );
+            )
+    }
 }
 
 export default Header;

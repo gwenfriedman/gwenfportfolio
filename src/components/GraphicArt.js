@@ -20,13 +20,11 @@ import s17 from './images/GA/mahler.jpg';
 import SimpleReactLightbox from "simple-react-lightbox";
 
 
-
 class GraphicArt extends React.Component {
  render() { return(
     <div>
         <Home/>
-        <h1 className="text-center mt-5"> Poster Design </h1>
-        <div className="row justify-content-md-center mt-4">
+        <div className="row justify-content-md-center">
           <div className="col-md-4 col-6">
                 <img className="col" src={s1}/>
                 <div class="col caption mt-1">

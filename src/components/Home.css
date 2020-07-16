@@ -1,6 +1,111 @@
-.nav { position: relative; }
-.header-img { position: absolute; top: 0; left: 0; width: 100%; height: auto;}
+.red {
+    background-color: #F92B00;
+}
+
+.pink {
+    background-color: #FF9DCB;
+    line-height: 35px!important;
+}
+
+.yellow {
+    background-color: #FFD40C;
+}
+
+.green {
+    background-color: #6CC027;
+}
+
+.light-blue {
+    background-color: #2BAAC0;
+}
+
+.dark-blue {
+    background-color: #0B4E80;
+}
+
+.black {
+    background-color: black;
+}
+
+.menu-mobile-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.close-btn {
+    float: right;
+    margin-right: 45px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.block {
+    width:50px;
+    height:70px;
+    margin-top: 10px;
+}
+
+.hamburger {
+    width:45px;
+    height:8px;
+    margin-top: 5px;
+}
+
+.block-expand {
+    margin-top: 10px !important;
+    width:165px;
+    height:70px;
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 75px;
+}
+
+.menu {
+    margin-left: 85%;
+}
+
+.mobile-menu {
+    margin-top: -45px;
+    margin-bottom: 30px;
+}
+
+
+.hover-button .hover-button--on,
+.hover-button:hover .hover-button--off {
+    display: none;
+}
+
+.hover-button:hover .hover-button--on {
+    display: block;
+}
 
 .header {
-padding-bottom: 75px;
+    margin-left: 100px;
+    margin-top: 25px;
+    font-weight: normal;
+}
+
+.mobile-head {
+    margin-left: 50px;
+    margin-top: 25px;
+    font-weight: normal;
+    font-size: 30px;
+}
+
+.underline-mobile {
+    margin-left: 50px;
+    height: 3px;
+    width: 275px;
+    background-color: #FFD40C;
+}
+
+.underline {
+    margin-left: 100px;
+    height: 4px;
+    width: 375px;
+    background-color: #FFD40C;
 }

@@ -1,14 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import GraphicArt from './components/GraphicArt.js'
 import Home from './components/Home.js'
+import MobileMenu from './components/MobileMenu.js'
 import WebDesign from './components/WebDesign.js'
 
 import About from './components/About.js'
 import Branding from './components/Branding.js'
 import Embroidery from './components/Embroidery.js'
-import Photos from './components/Photos.js'
 import Sewing from './components/Sewing.js'
 import Drawings from './components/Drawings.js'
 
@@ -22,6 +21,9 @@ function App() {
 	    <div>
 	        <Route exact path='/'
         	 component={Home}/>
+
+            <Route exact path='/mobilemenu'
+              component={MobileMenu}/>
 
             <Route exact path='/graphicart'
              component={GraphicArt}/>
@@ -40,9 +42,6 @@ function App() {
 
                <Route exact path='/embroidery'
                 component={Embroidery}/>
-
-                <Route exact path='/photography'
-                 component={Photos}/>
 
                  <Route exact path='/sewing'
                    component={Sewing}/>
