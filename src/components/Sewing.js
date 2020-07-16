@@ -23,7 +23,7 @@ import s19 from './images/Sewing/dress9.jpg';
 import s20 from './images/Sewing/dress10.jpg';
 import s21 from './images/Sewing/jacket1.jpg';
 import s22 from './images/Sewing/bowtie1.jpg';
-import s23 from './images/Sewing/prom.jpg';
+// import s23 from './images/Sewing/prom.jpg';
 
 
 
@@ -216,19 +216,19 @@ class Sewing extends React.Component {
         </div>
     </div>
 
-    <div className="row justify-content-md-center mt-4">
-               <div className="col-md-4 col-6">
-                     <img className="col" src={s23}/>
-               </div>
-         </div>
+    {/*<div className="row justify-content-md-center mt-4">*/}
+    {/*           <div className="col-md-4 col-6">*/}
+    {/*                 <img className="col" src={s23}/>*/}
+    {/*           </div>*/}
+    {/*     </div>*/}
 
-         <div className="row justify-content-md-center mt-2">
-              <div className="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Dress, jacket, shirt, and bowtie made for prom. </p>
-                </div>
-              </div>
-        </div>
+    {/*     <div className="row justify-content-md-center mt-2">*/}
+    {/*          <div className="col-md-4 col-6">*/}
+    {/*            <div class="col caption">*/}
+    {/*              <p> Dress, jacket, shirt, and bowtie made for prom. </p>*/}
+    {/*            </div>*/}
+    {/*          </div>*/}
+    {/*    </div>*/}
 
 
    </div>
