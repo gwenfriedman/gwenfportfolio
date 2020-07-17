@@ -30,10 +30,7 @@ import s22 from './images/Sewing/bowtie1.jpg';
 class Sewing extends React.Component {
  render() { return(
     <div>
-        <Home/>
-
-       <h1 className="container-fluid mt-3 text-center">Sewing</h1>
-
+        <Home open={'sewing'}/>
        <div className="row justify-content-md-center mt-4">
              <div className="col-md-4 col-6">
                    <img className="col" src={s1}/>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './Home.js';
+import './Home.css';
 import s1 from './images/GA/sofar-3.16.jpg';
 import s2 from './images/GA/sofar-3.19.jpg';
 import s3 from './images/GA/sofar-3.29.jpg';
@@ -21,7 +22,8 @@ import s17 from './images/GA/mahler.jpg';
 class GraphicArt extends React.Component {
  render() { return(
     <div>
-        <Home/>
+        <Home open={'posters'}/>
+        <div className={'posters'}>
         <div className="row justify-content-md-center">
           <div className="col-md-4 col-6">
                 <img className="col" src={s1}/>
@@ -157,6 +159,7 @@ class GraphicArt extends React.Component {
                   <p> Poster for Typography 1 class for a Mahler show at the BSO.</p>
             </div>
           </div>
+        </div>
         </div>
     </div>
    )

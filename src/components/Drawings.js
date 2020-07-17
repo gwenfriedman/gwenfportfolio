@@ -22,10 +22,7 @@ import d18 from './images/GD/2d.png';
 class Drawings extends React.Component {
  render() { return(
     <div>
-        <Home/>
-
-       <h1 className="container-fluid mt-3 text-center">Digital Drawings</h1>
-
+        <Home open={'drawings'}/>
        <div className="row justify-content-md-center mt-4">
          <div className="col-md-4 col-6">
                <img className="col" src={d1}/>

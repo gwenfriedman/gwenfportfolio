@@ -12,11 +12,7 @@ import e7 from './images/Embroidery/skirt1.jpg';
 class Embroidery extends React.Component {
  render() { return(
     <div>
-        <Home/>
-
-       <h1 className="container-fluid text-center mt-3">Embroidery</h1>
-
-
+        <Home open={'embroidery'}/>
         <div className="row justify-content-md-center mt-4">
              <div className="col-md-4 col-6">
                    <img className="col" src={e1}/>
