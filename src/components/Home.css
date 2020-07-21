@@ -65,7 +65,7 @@
 }
 
 .menu {
-    margin-left: 85%;
+    margin-left: 78%;
     margin-top: 35px;
 }
 
@@ -111,8 +111,72 @@
     background-color: #FFD40C;
 }
 
-.posters {
+.gallery-computer {
+    margin-top: -520px !important;
+    margin-left: 100px;
+    margin-right: 400px;
+}
+
+/*.react-photo-gallery--gallery {*/
+/*    margin-left: 100px;*/
+/*    margin-right: 400px;*/
+/*}*/
+
+.ReactGridGallery {
+    margin-left: 100px;
+    margin-right: 400px;
+}
+
+/*.ReactGridGallery_tile {*/
+/*    width: 396px;*/
+/*    margin-right: 50px !important;*/
+/*}*/
+
+/*.ReactGridGallery_tile-viewport {*/
+/*    width: 396px !important;*/
+/*}*/
+
+/*img {*/
+/*    margin-left: 0px !important;*/
+/*}*/
+
+.about-image {
+    width: 300px;
     margin-top: -520px;
-    margin-left: -100px;
-    width: 90%;
+    margin-left: 100px;
+}
+
+.bio {
+    margin-top: -475px;
+    margin-left: 450px;
+    margin-right: 30%;
+}
+
+.about-image-tablet {
+    width: 200px;
+    margin-top: -520px;
+    margin-left: 100px;
+}
+
+.bio-tablet {
+    margin-top: -320px;
+    margin-left: 350px;
+    margin-right: 30%;
+}
+
+.resume {
+    color: #F92B00;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.about-image-phone {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.bio-phone {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }

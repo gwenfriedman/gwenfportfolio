@@ -18,209 +18,223 @@ import d15 from './images/GD/noah3.png';
 import d16 from './images/GD/ernie.jpg';
 import d17 from './images/GD/gwen4.png';
 import d18 from './images/GD/2d.png';
+import Gallery from "react-photo-gallery";
+import Carousel, { Modal, ModalGateway } from "react-images";
+
+
+const IMAGES =
+    [{
+        src: d1,
+        width: 792,
+        height: 533,
+    },
+    {
+        src: d2,
+        width: 792,
+        height: 533,
+    },
+    {
+        src: d3,
+        width: 1179,
+        height: 1754,
+    },
+    {
+        src: d4,
+        width: 6600,
+        height: 10200,
+    },
+    {
+        src: d5,
+        width: 3717,
+        height: 2750,
+    },
+    {
+        src: d6,
+        width: 3300,
+        height: 4401,
+    },
+    {
+        src: d7,
+        width: 8316,
+        height: 9836
+    },
+    {
+        src: d8,
+        width: 792,
+        height: 527
+    },
+    {
+        src: d9,
+        width: 796,
+        height: 532,
+    },
+    {
+        src: d10,
+        width: 792,
+        height: 612,
+    },
+    {
+        src: d11,
+        width: 680,
+        height: 612,
+    },
+    {
+        src: d12,
+        width: 2550,
+        height: 1928,
+    },
+    {
+        src: d13,
+        width: 2550,
+        height: 3300,
+    },
+    {
+        src: d14,
+        width: 598,
+        height: 792,
+    },
+    {
+        src: d15,
+        width: 792,
+        height: 553,
+    },
+    {
+        src: d16,
+        width: 792,
+        height: 1003,
+    },
+    {
+        src: d17,
+        width: 797,
+        height: 535,
+    },
+    {
+        src: d18,
+        width: 4176,
+        height: 2582,
+    }
+    ];
 
 class Drawings extends React.Component {
- render() { return(
-    <div>
-        <Home open={'drawings'}/>
-       <div className="row justify-content-md-center mt-4">
-         <div className="col-md-4 col-6">
-               <img className="col" src={d1}/>
-               <div class="col caption mt-1">
-                 <p> Portrait of my grandfather. Made with Illustrator. </p>
-           </div>
+    constructor(props) {
+        super(props);
+        this.state = {
+            currentImage: 0,
+            viewerIsOpen: false,
+        };
+    }
+
+    openLightbox = () => {
+            this.setState({currentImage: 1, viewerIsOpen: true});
+    };
+
+    closeLightbox = () => {
+        this.setState({currentImage: 0, viewerIsOpen: false})
+};
+
+ render() {
+     const {viewerIsOpen, currentImage} = this.state;
+     return (
+     <div>
+         <Home open={'drawings'}/>
+
+         <div className={'gallery-computer d-none d-sm-none d-md-block'}>
+             <Gallery photos={IMAGES} direction={"column"} onClick={this.openLightbox}/>
          </div>
-         <div class="col-md-4 col-6">
-               <img className="col" src={d2}/>
-               <div class="col caption mt-1">
-                 <p> Portrait made with Illustrator. </p>
-               </div>
+         <div className={'d-sm-block d-md-none'}>
+             <Gallery photos={IMAGES}/>
          </div>
-       </div>
 
-
-     <div className="row justify-content-md-center mt-4">
-          <div className="col-md-4 col-6">
-                <img className="col" src={d3}/>
-          </div>
-          <div class="col-md-4 col-6">
-                <img className="col" src={d4}/>
-          </div>
-    </div>
-
-    <div className="row justify-content-md-center mt-2">
-          <div className="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Self portrait made with Illustrator. </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Poster made with Illustrator. </p>
-                </div>
-          </div>
-    </div>
-
-
-     <div className="row justify-content-md-center mt-4">
-          <div className="col-md-4 col-6">
-                <img className="col" src={d7}/>
-          </div>
-          <div class="col-md-4 col-6">
-                <img className="col" src={d6}/>
-          </div>
-    </div>
-
-     <div className="row justify-content-md-center mt-2">
-          <div className="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Tee shirt design for Experience Squam made with Illustrator. </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Drawing made with Illustrator. </p>
-                </div>
-          </div>
-    </div>
-
-
-     <div className="row justify-content-md-center mt-4">
-          <div className="col-md-4 col-6">
-                <img className="col" src={d5}/>
-          </div>
-          <div class="col-md-4 col-6">
-                <img className="col" src={d8}/>
-          </div>
-    </div>
-
-     <div className="row justify-content-md-center mt-2">
-          <div className="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Drawing made with Illustrator. </p>
-                </div>
-          </div>
-    </div>
-
-
-     <div className="row justify-content-md-center mt-4">
-          <div className="col-md-4 col-6">
-                <img className="col" src={d9}/>
-          </div>
-          <div class="col-md-4 col-6">
-                <img className="col" src={d10}/>
-          </div>
-    </div>
-
-     <div className="row justify-content-md-center mt-2">
-          <div className="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-                </div>
-          </div>
-    </div>
-
-     <div className="row justify-content-md-center mt-4">
-          <div className="col-md-4 col-6">
-                <img className="col" src={d11}/>
-          </div>
-          <div class="col-md-4 col-6">
-                <img className="col" src={d12}/>
-          </div>
-    </div>
-
-     <div className="row justify-content-md-center mt-2">
-          <div className="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-                </div>
-          </div>
-    </div>
-
-     <div className="row justify-content-md-center mt-4">
-          <div className="col-md-4 col-6">
-                <img className="col" src={d13}/>
-          </div>
-          <div class="col-md-4 col-6">
-                <img className="col" src={d14}/>
-          </div>
-    </div>
-
-     <div className="row justify-content-md-center mt-2">
-          <div className="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-                </div>
-          </div>
-    </div>
-
-     <div className="row justify-content-md-center mt-4">
-          <div className="col-md-4 col-6">
-                <img className="col" src={d15}/>
-          </div>
-          <div class="col-md-4 col-6">
-                <img className="col" src={d16}/>
-          </div>
-    </div>
-
-     <div className="row justify-content-md-center mt-2">
-          <div className="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-                </div>
-          </div>
-    </div>
-
-    <div className="row justify-content-md-center mt-4">
-          <div className="col-md-4 col-6">
-                <img className="col" src={d17}/>
-          </div>
-          <div class="col-md-4 col-6">
-                <img className="col" src={d18}/>
-          </div>
-    </div>
-
-     <div className="row justify-content-md-center mt-2">
-          <div className="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-            </div>
-          </div>
-          <div class="col-md-4 col-6">
-                <div class="col caption">
-                  <p> Portrait made with Illustrator. </p>
-                </div>
-          </div>
-    </div>
-
-
-   </div>
+         {/*<ModalGateway>*/}
+             {/*{viewerIsOpen ? (*/}
+             {/*    <Modal onClose={this.closeLightbox}>*/}
+             {/*        <Carousel*/}
+             {/*            currentIndex={currentImage}*/}
+             {/*            views={IMAGES.map(x => ({*/}
+             {/*                ...x,*/}
+             {/*                srcset: x.srcSet,*/}
+             {/*                caption: x.title*/}
+             {/*            }))}*/}
+             {/*        />*/}
+             {/*    </Modal>*/}
+             {/*) : null}*/}
+         {/*</ModalGateway>*/}
+     </div>
    )
- }
+  }
 }
+
 export default Drawings;
+
+
+// import React, {Component, Fragment} from 'react';
+// import Carousel, { Modal, ModalGateway } from 'react-images';
+// import Gallery from "react-photo-gallery";
+// import Lightbox from 'react-images';
+//
+//
+// const IMAGES =
+//     [{
+//         src: d1,
+//         width: 792,
+//         height: 533,
+//     },
+//     {
+//         src: d2,
+//         width: 792,
+//         height: 533,
+//     }
+// ];
+//
+// class Drawings extends Component {
+//     state = {
+//         selectedIndex: 0,
+//         lightboxIsOpen: false,
+//     };
+//     toggleLightbox = (selectedIndex) => {
+//         this.setState(state => ({
+//             lightboxIsOpen: !state.lightboxIsOpen,
+//             selectedIndex,
+//         }));
+//     };
+//
+//     render() {
+//         const {selectedIndex, lightboxIsOpen} = this.state;
+//         return (
+//             <Fragment>
+//                 <Gallery photos={IMAGES} direction={"column"} onClick={this.openLightbox}/>
+//                 {/*<Gallery>*/}
+//                 {/*    {IMAGES.map(({ caption, source }, j) => (*/}
+//                 {/*        <Image*/}
+//                 {/*            onClick={() => this.toggleLightbox(j)}*/}
+//                 {/*            key={source}*/}
+//                 {/*        >*/}
+//                 {/*            <img*/}
+//                 {/*                alt={caption}*/}
+//                 {/*                src={source}*/}
+//                 {/*                css={{*/}
+//                 {/*                    cursor: 'pointer',*/}
+//                 {/*                    position: 'absolute',*/}
+//                 {/*                    maxWidth: '100%',*/}
+//                 {/*                }}*/}
+//                 {/*            />*/}
+//                 {/*        </Image>*/}
+//                 {/*    ))}*/}
+//                 {/*</Gallery>*/}
+//
+//                 {/*<ModalGateway>*/}
+//                 {/*    {lightboxIsOpen ? (*/}
+//                 {/*        <Modal onClose={this.toggleLightbox}>*/}
+//                 {/*            <Carousel*/}
+//                 {/*                currentIndex={selectedIndex}*/}
+//                 {/*                views={IMAGES}*/}
+//                 {/*            />*/}
+//                 {/*        </Modal>*/}
+//                 {/*    ) : null}*/}
+//                 {/*</ModalGateway>*/}
+//             </Fragment>
+//         );
+//     }
+// }
+//
+// export default Drawings;

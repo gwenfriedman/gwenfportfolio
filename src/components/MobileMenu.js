@@ -11,31 +11,31 @@ class MobileMenu extends React.Component {
                 <Link to={`/graphicart`}>
                     <div className={'close-btn'}>X</div>
                 </Link>
-                                <Link to={`/graphicart`}>
+                                <Link to={`/graphicart`} style={{ textDecoration: 'none' }}>
                                     <div className={'block-expand red menu-mobile-center'}>Posters</div>
                                 </Link>
 
-                                <Link to={`/drawings`}>
+                                <Link to={`/drawings`} style={{ textDecoration: 'none' }}>
                                     <div className={'block-expand pink menu-mobile-center'}>Digital Drawings</div>
                                 </Link>
 
-                                <Link to={`/branding`}>
+                                <Link to={`/branding`} style={{ textDecoration: 'none' }}>
                                     <div className={'block-expand yellow menu-mobile-center'}>Branding</div>
                                 </Link>
 
-                                <Link to={`/sewing`}>
+                                <Link to={`/sewing`} style={{ textDecoration: 'none' }}>
                                     <div className={'block-expand green menu-mobile-center'}>Sewing</div>
                                 </Link>
 
-                                <Link to={`/webdesign`}>
+                                <Link to={`/webdesign`} style={{ textDecoration: 'none' }}>
                                     <div className={'block-expand light-blue menu-mobile-center'}>Web Design</div>
                                 </Link>
 
-                                <Link to={`/embroidery`}>
+                                <Link to={`/embroidery`} style={{ textDecoration: 'none' }}>
                                     <div className={'block-expand dark-blue menu-mobile-center'}>Embroidery</div>
                                 </Link>
 
-                                <Link to={`/about`}>
+                                <Link to={`/about`} style={{ textDecoration: 'none' }}>
                                     <div className={'block-expand black menu-mobile-center'}>About</div>
                                 </Link>
             </div>

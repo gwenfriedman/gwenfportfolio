@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
+import Drawings from './components/Drawings.js'
 import GraphicArt from './components/GraphicArt.js'
 import Home from './components/Home.js'
 import MobileMenu from './components/MobileMenu.js'
 import WebDesign from './components/WebDesign.js'
-
 import About from './components/About.js'
 import Branding from './components/Branding.js'
 import Embroidery from './components/Embroidery.js'
 import Sewing from './components/Sewing.js'
-import Drawings from './components/Drawings.js'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import {BrowserRouter as Router, Route} from "react-router-dom";
@@ -43,8 +42,8 @@ function App() {
                <Route exact path='/embroidery'
                 component={Embroidery}/>
 
-                 <Route exact path='/sewing'
-                   component={Sewing}/>
+             <Route exact path='/sewing'
+               component={Sewing}/>
         </div>
     </Router>
   )

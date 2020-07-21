@@ -147,7 +147,6 @@ class Header extends React.Component {
                     <h1 className={'mobile-head'}> Gwendolyn Friedman </h1>
                     <div className={'underline-mobile'}></div>
 
-
                     <Link to={`/mobilemenu`}>
                 <div className={'menu mobile-menu'}>
                     <div>
