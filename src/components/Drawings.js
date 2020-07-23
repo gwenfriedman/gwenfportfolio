@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import Home from './Home.js'
 import d1 from './images/GD/grandpa.png';
 import d2 from './images/GD/noah4.png';
@@ -18,12 +18,110 @@ import d15 from './images/GD/noah3.png';
 import d16 from './images/GD/ernie.jpg';
 import d17 from './images/GD/gwen4.png';
 import d18 from './images/GD/2d.png';
+import d19 from './images/GD/daph.jpg';
+import d20 from './images/GD/barn.JPG';
+import d21 from './images/GD/boston.JPG';
+import d22 from './images/GD/boston2.JPG';
+import d23 from './images/GD/copilot2.JPG';
+import d24 from './images/GD/copilot.JPG';
+import d25 from './images/GD/dog.JPG';
+import d26 from './images/GD/flowers.JPG';
+import d27 from './images/GD/france.JPG';
+import d28 from './images/GD/geese.jpg';
+import d29 from './images/GD/hotel.png';
+import d30 from './images/GD/kalei.JPG';
+import d31 from './images/GD/rats.JPG';
+import d32 from './images/GD/room.JPG';
+import d33 from './images/GD/self.JPG';
+import d34 from './images/GD/teddy.JPG';
+import d35 from './images/GD/winnie.JPG';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
 
 const IMAGES =
-    [{
+    [
+        {
+            src: d20,
+            width: 2160,
+            height: 1620,
+        },
+        {
+            src: d21,
+            width: 1621,
+            height: 1261,
+        },
+        {
+            src: d22,
+            width: 2160,
+            height: 2149,
+        },
+        {
+            src: d23,
+            width: 5500,
+            height: 5500,
+        },
+        {
+            src: d24,
+            width: 5500,
+            height: 5500,
+        },
+        {
+            src: d25,
+            width: 2160,
+            height: 2160
+        },
+        {
+            src: d26,
+            width: 2160,
+            height: 2160
+        },
+        {
+            src: d27,
+            width: 2160,
+            height: 2160,
+        },
+        {
+            src: d28,
+            width: 2160,
+            height: 2160,
+        },
+        {
+            src: d29,
+            width: 2160,
+            height: 2160,
+        },
+        {
+            src: d30,
+            width: 2160,
+            height: 2160,
+        },
+        {
+            src: d31,
+            width: 2160,
+            height: 1216,
+        },
+        {
+            src: d32,
+            width: 2603,
+            height: 2046
+        },
+        {
+            src: d33,
+            width: 4000,
+            height: 5500
+        },
+        {
+            src: d34,
+            width: 2160,
+            height: 2160,
+        },
+        {
+            src: d35,
+            width: 5500,
+            height: 4000,
+        },
+     {
         src: d1,
         width: 792,
         height: 533,
@@ -112,7 +210,12 @@ const IMAGES =
         src: d18,
         width: 4176,
         height: 2582,
-    }
+    },
+        {
+            src: d19,
+            width: 5101,
+            height: 3301,
+        }
     ];
 
 class Drawings extends React.Component {
@@ -124,8 +227,9 @@ class Drawings extends React.Component {
         };
     }
 
-    openLightbox = () => {
-            this.setState({currentImage: 1, viewerIsOpen: true});
+    openLightbox = (e) => {
+        console.log('e', e);
+        this.setState({currentImage: 1, viewerIsOpen: true});
     };
 
     closeLightbox = () => {
@@ -139,102 +243,29 @@ class Drawings extends React.Component {
          <Home open={'drawings'}/>
 
          <div className={'gallery-computer d-none d-sm-none d-md-block'}>
-             <Gallery photos={IMAGES} direction={"column"} onClick={this.openLightbox}/>
+             <Gallery photos={IMAGES} direction={"column"} onClick={(e)=> this.openLightbox(e)}/>
          </div>
          <div className={'d-sm-block d-md-none'}>
              <Gallery photos={IMAGES}/>
          </div>
 
-         {/*<ModalGateway>*/}
-             {/*{viewerIsOpen ? (*/}
-             {/*    <Modal onClose={this.closeLightbox}>*/}
-             {/*        <Carousel*/}
-             {/*            currentIndex={currentImage}*/}
-             {/*            views={IMAGES.map(x => ({*/}
-             {/*                ...x,*/}
-             {/*                srcset: x.srcSet,*/}
-             {/*                caption: x.title*/}
-             {/*            }))}*/}
-             {/*        />*/}
-             {/*    </Modal>*/}
-             {/*) : null}*/}
-         {/*</ModalGateway>*/}
+         <ModalGateway>
+             {viewerIsOpen ? (
+                 <Modal onClose={this.closeLightbox}>
+                     <Carousel
+                         currentIndex={currentImage}
+                         views={IMAGES.map(x => ({
+                             ...x,
+                             srcset: x.srcSet,
+                             caption: x.title
+                         }))}
+                     />
+                 </Modal>
+             ) : null}
+         </ModalGateway>
      </div>
    )
   }
 }
 
 export default Drawings;
-
-
-// import React, {Component, Fragment} from 'react';
-// import Carousel, { Modal, ModalGateway } from 'react-images';
-// import Gallery from "react-photo-gallery";
-// import Lightbox from 'react-images';
-//
-//
-// const IMAGES =
-//     [{
-//         src: d1,
-//         width: 792,
-//         height: 533,
-//     },
-//     {
-//         src: d2,
-//         width: 792,
-//         height: 533,
-//     }
-// ];
-//
-// class Drawings extends Component {
-//     state = {
-//         selectedIndex: 0,
-//         lightboxIsOpen: false,
-//     };
-//     toggleLightbox = (selectedIndex) => {
-//         this.setState(state => ({
-//             lightboxIsOpen: !state.lightboxIsOpen,
-//             selectedIndex,
-//         }));
-//     };
-//
-//     render() {
-//         const {selectedIndex, lightboxIsOpen} = this.state;
-//         return (
-//             <Fragment>
-//                 <Gallery photos={IMAGES} direction={"column"} onClick={this.openLightbox}/>
-//                 {/*<Gallery>*/}
-//                 {/*    {IMAGES.map(({ caption, source }, j) => (*/}
-//                 {/*        <Image*/}
-//                 {/*            onClick={() => this.toggleLightbox(j)}*/}
-//                 {/*            key={source}*/}
-//                 {/*        >*/}
-//                 {/*            <img*/}
-//                 {/*                alt={caption}*/}
-//                 {/*                src={source}*/}
-//                 {/*                css={{*/}
-//                 {/*                    cursor: 'pointer',*/}
-//                 {/*                    position: 'absolute',*/}
-//                 {/*                    maxWidth: '100%',*/}
-//                 {/*                }}*/}
-//                 {/*            />*/}
-//                 {/*        </Image>*/}
-//                 {/*    ))}*/}
-//                 {/*</Gallery>*/}
-//
-//                 {/*<ModalGateway>*/}
-//                 {/*    {lightboxIsOpen ? (*/}
-//                 {/*        <Modal onClose={this.toggleLightbox}>*/}
-//                 {/*            <Carousel*/}
-//                 {/*                currentIndex={selectedIndex}*/}
-//                 {/*                views={IMAGES}*/}
-//                 {/*            />*/}
-//                 {/*        </Modal>*/}
-//                 {/*    ) : null}*/}
-//                 {/*</ModalGateway>*/}
-//             </Fragment>
-//         );
-//     }
-// }
-//
-// export default Drawings;

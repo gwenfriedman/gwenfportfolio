@@ -23,7 +23,33 @@ import s19 from './images/Sewing/dress9.jpg';
 import s20 from './images/Sewing/dress10.jpg';
 import s21 from './images/Sewing/jacket1.jpg';
 import s22 from './images/Sewing/bowtie1.jpg';
-// import s23 from './images/Sewing/prom.jpg';
+import s23 from './images/Sewing/prom.jpg';
+import s24 from './images/Sewing/2quilt1.JPG';
+import s25 from './images/Sewing/2quilt2.JPG';
+import s26 from './images/Sewing/3quilt.JPG';
+import s27 from './images/Sewing/4quilt.JPG';
+import s28 from './images/Sewing/betsy1.jpg';
+import s29 from './images/Sewing/betsy2.jpg';
+import s30 from './images/Sewing/goldFringe1.JPG';
+import s31 from './images/Sewing/goldfringe2.jpg';
+import s32 from './images/Sewing/goldfringe3.JPG';
+import s33 from './images/Sewing/goldfringe4.JPG';
+import s34 from './images/Sewing/goldfringe5.JPG';
+import s35 from './images/Sewing/jumpsuit.jpg';
+import s36 from './images/Sewing/make&mend.JPG';
+import s37 from './images/Sewing/quilt1.png';
+import s38 from './images/Sewing/quilt2.png';
+import s39 from './images/Sewing/quilt3.png';
+import s40 from './images/Sewing/quiltJacket1.JPG';
+import s41 from './images/Sewing/quiltJacket2.JPG';
+import s42 from './images/Sewing/redSet1.JPG';
+import s43 from './images/Sewing/redSet2.JPG';
+import s44 from './images/Sewing/redSet3.JPG';
+import s45 from './images/Sewing/velvet1.JPG';
+import s46 from './images/Sewing/velvet2.JPG';
+import s47 from './images/Sewing/velvet3.JPG';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 
@@ -31,47 +57,149 @@ class Sewing extends React.Component {
  render() { return(
     <div>
         <Home open={'sewing'}/>
-       <div className="row justify-content-md-center mt-4">
-             <div className="col-md-4 col-6">
-                   <img className="col" src={s1}/>
-             </div>
-             <div class="col-md-4 col-6">
-                   <img className="col" src={s2}/>
-             </div>
-              <div class="col-md-4 col-6">
-                    <img className="col" src={s5}/>
-              </div>
-       </div>
+        <div className={'sewing-carousel sewing-top'}>
+        <Carousel renderThumbs={() => []}>
+            <div>
+                <img src={s1} />
+            </div>
+            <div>
+                <img src={s2} />
+            </div>
+            <div>
+                <img src={s3} />
+            </div>
+            <div>
+                <img src={s4} />
+            </div>
+        </Carousel>
+        </div>
 
-      <div className="row justify-content-md-center mt-4">
-            <div className="col-md-4 col-6">
-                  <img className="col" src={s3}/>
-            </div>
-            <div class="col-md-4 col-6">
-                  <img className="col" src={s4}/>
-            </div>
-      </div>
-
-       <div className="row justify-content-md-center mt-2">
-            <div className="text-center">
-                  <div class="col caption">
-                    <p> Jacket made out of old pants. Coat and Dress made of old pants and tablecloth. </p>
-              </div>
-            </div>
-      </div>
+        <div class="caption sewing-caption">
+            <p> Jacket made out of old pants. Coat and Dress made of old pants and tablecloth. </p>
+        </div>
 
 
-     <div className="row justify-content-md-center mt-4">
-           <div className="col-md-4 col-6">
-                 <img className="col" src={s6}/>
-           </div>
-           <div class="col-md-4 col-6">
-                 <img className="col" src={s7}/>
-           </div>
-            <div class="col-md-4 col-6">
-                  <img className="col" src={s8}/>
-            </div>
-     </div>
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s37} />
+                </div>
+                <div>
+                    <img src={s38} />
+                </div>
+                <div>
+                    <img src={s39} />
+                </div>
+            </Carousel>
+        </div>
+
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s28} />
+                </div>
+                <div>
+                    <img src={s29} />
+                </div>
+            </Carousel>
+        </div>
+
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s24} />
+                </div>
+                <div>
+                    <img src={s25} />
+                </div>
+            </Carousel>
+        </div>
+
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s26} />
+                </div>
+                <div>
+                    <img src={s27} />
+                </div>
+            </Carousel>
+        </div>
+
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s30} />
+                </div>
+                <div>
+                    <img src={s31} />
+                </div>
+                <div>
+                    <img src={s32} />
+                </div>
+                <div>
+                    <img src={s33} />
+                </div>
+                <div>
+                    <img src={s34} />
+                </div>
+            </Carousel>
+        </div>
+
+
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s45} />
+                </div>
+                <div>
+                    <img src={s46} />
+                </div>
+                <div>
+                    <img src={s47} />
+                </div>
+            </Carousel>
+        </div>
+
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s40} />
+                </div>
+                <div>
+                    <img src={s41} />
+                </div>
+            </Carousel>
+        </div>
+
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s42} />
+                </div>
+                <div>
+                    <img src={s43} />
+                </div>
+                <div>
+                    <img src={s44} />
+                </div>
+            </Carousel>
+        </div>
+
+
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s6} />
+                </div>
+                <div>
+                    <img src={s7} />
+                </div>
+                <div>
+                    <img src={s8} />
+                </div>
+            </Carousel>
+        </div>
 
      <div className="row justify-content-md-center mt-2">
           <div className="text-center">
@@ -81,37 +209,16 @@ class Sewing extends React.Component {
           </div>
     </div>
 
-
-     <div className="row justify-content-md-center mt-4">
-           <div className="col-md-4 col-6">
-                 <img className="col" src={s9}/>
-           </div>
-           <div class="col-md-4 col-6">
-                 <img className="col" src={s10}/>
-           </div>
-     </div>
-
-     <div className="row justify-content-md-center mt-2">
-          <div className="col-md-4 col-6">
-            <div class="col caption">
-              <p> Dress made with vintage pattern. </p>
-            </div>
-          </div>
-        <div className="col-md-4 col-6">
-          <div class="col caption">
-            <p> Dress made with hand stamped fabric. </p>
-          </div>
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s11} />
+                </div>
+                <div>
+                    <img src={s12} />
+                </div>
+            </Carousel>
         </div>
-    </div>
-
-      <div className="row justify-content-md-center mt-4">
-            <div className="col-md-4 col-6">
-                  <img className="col" src={s11}/>
-            </div>
-            <div class="col-md-4 col-6">
-                  <img className="col" src={s12}/>
-            </div>
-      </div>
 
        <div className="row justify-content-md-center mt-2">
             <div className="text-center">
@@ -121,15 +228,16 @@ class Sewing extends React.Component {
             </div>
       </div>
 
-
-      <div className="row justify-content-md-center mt-4">
-            <div className="col-md-4 col-6">
-                  <img className="col" src={s13}/>
-            </div>
-            <div class="col-md-4 col-6">
-                  <img className="col" src={s14}/>
-            </div>
-      </div>
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s13} />
+                </div>
+                <div>
+                    <img src={s14} />
+                </div>
+            </Carousel>
+        </div>
 
        <div className="row justify-content-md-center mt-2">
             <div className="text-center">
@@ -139,13 +247,15 @@ class Sewing extends React.Component {
             </div>
       </div>
 
-        <div className="row justify-content-md-center mt-4">
-              <div className="col-md-4 col-6">
-                    <img className="col" src={s15}/>
-              </div>
-              <div class="col-md-4 col-6">
-                    <img className="col" src={s16}/>
-              </div>
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s15} />
+                </div>
+                <div>
+                    <img src={s16} />
+                </div>
+            </Carousel>
         </div>
 
          <div className="row justify-content-md-center mt-2">
@@ -156,13 +266,15 @@ class Sewing extends React.Component {
               </div>
         </div>
 
-        <div className="row justify-content-md-center mt-4">
-              <div className="col-md-4 col-6">
-                    <img className="col" src={s17}/>
-              </div>
-              <div class="col-md-4 col-6">
-                    <img className="col" src={s18}/>
-              </div>
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s17} />
+                </div>
+                <div>
+                    <img src={s18} />
+                </div>
+            </Carousel>
         </div>
 
          <div className="row justify-content-md-center mt-2">
@@ -173,13 +285,15 @@ class Sewing extends React.Component {
               </div>
         </div>
 
-        <div className="row justify-content-md-center mt-4">
-              <div className="col-md-4 col-6">
-                    <img className="col" src={s19}/>
-              </div>
-              <div class="col-md-4 col-6">
-                    <img className="col" src={s20}/>
-              </div>
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s19} />
+                </div>
+                <div>
+                    <img src={s20} />
+                </div>
+            </Carousel>
         </div>
 
          <div className="row justify-content-md-center mt-2">
@@ -190,44 +304,13 @@ class Sewing extends React.Component {
               </div>
         </div>
 
-
-     <div className="row justify-content-md-center mt-4">
-           <div className="col-md-4 col-6">
-                 <img className="col" src={s21}/>
-           </div>
-           <div class="col-md-4 col-6">
-                 <img className="col" src={s22}/>
-           </div>
-     </div>
-
-     <div className="row justify-content-md-center mt-2">
-          <div className="col-md-4 col-6">
-            <div class="col caption">
-              <p> Jacket made from flannel personalized with an N. </p>
-            </div>
-          </div>
-        <div className="col-md-4 col-6">
-          <div class="col caption">
-            <p> Bowtie made with red cotton with gold polka dots. </p>
-          </div>
-        </div>
-    </div>
-
-    {/*<div className="row justify-content-md-center mt-4">*/}
-    {/*           <div className="col-md-4 col-6">*/}
-    {/*                 <img className="col" src={s23}/>*/}
-    {/*           </div>*/}
-    {/*     </div>*/}
-
-    {/*     <div className="row justify-content-md-center mt-2">*/}
-    {/*          <div className="col-md-4 col-6">*/}
-    {/*            <div class="col caption">*/}
-    {/*              <p> Dress, jacket, shirt, and bowtie made for prom. </p>*/}
-    {/*            </div>*/}
-    {/*          </div>*/}
-    {/*    </div>*/}
-
-
+        <img className={'sewing-image'} src={s9}/>
+        <img className={'sewing-image'} src={s10}/>
+        <img className={'sewing-image'} src={s21}/>
+        <img className={'sewing-image'} src={s22}/>
+        <img className={'sewing-image'} src={s23}/>
+        <img className={'sewing-image'} src={s35}/>
+        <img className={'sewing-image'} src={s36}/>
    </div>
    )
  }

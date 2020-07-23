@@ -16,8 +16,9 @@ class About extends React.Component {
             and interaction design. In my free time I like to sew, draw, play with my dog,
             and work on my American Sign Language skills.</h4>
         <h5 className={'resume'}> insert resume link </h5>
-            <a className={'instaLink'} href={'https://www.instagram.com/art.by.gwen/'}> Instagram: @art.by.gwen </a>
-            <a> Github </a>
+            <a href={'https://www.instagram.com/art.by.gwen/'}> Instagram </a>
+            <a href={'https://github.com/gwenfriedman'}> Github </a>
+            <a href={'https://www.linkedin.com/in/gwendolyn-friedman/'}> LinkedIn </a>
             <h5> Contact me at gwenrfriedman@gmail.com </h5>
         </div>
 
@@ -27,8 +28,9 @@ class About extends React.Component {
                 and interaction design. In my free time I like to sew, draw, play with my dog,
                 and work on my American Sign Language skills.</h4>
             <h5 className={'resume'}> insert resume link </h5>
-            <a className={'instaLink'} href={'https://www.instagram.com/art.by.gwen/'}> Instagram: @art.by.gwen </a>
-            <a> Github </a>
+            <a href={'https://www.instagram.com/art.by.gwen/'}> Instagram </a>
+            <a href={'https://github.com/gwenfriedman'}> Github </a>
+            <a href={'https://www.linkedin.com/in/gwendolyn-friedman/'}> LinkedIn </a>
             <h5> Contact me at gwenrfriedman@gmail.com </h5>
         </div>
 
@@ -38,8 +40,9 @@ class About extends React.Component {
                 and interaction design. In my free time I like to sew, draw, play with my dog,
                 and work on my American Sign Language skills.</h4>
             <h5 className={'resume'}> insert resume link </h5>
-            <a className={'instaLink'} href={'https://www.instagram.com/art.by.gwen/'}> Instagram: @art.by.gwen </a>
-            <a> Github </a>
+            <a href={'https://www.instagram.com/art.by.gwen/'}> Instagram </a>
+            <a href={'https://github.com/gwenfriedman'}> Github </a>
+            <a href={'https://www.linkedin.com/in/gwendolyn-friedman/'}> LinkedIn </a>
             <h5> Contact me at gwenrfriedman@gmail.com </h5>
         </div>
 

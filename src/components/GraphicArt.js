@@ -1,7 +1,6 @@
 import React from 'react';
 import Home from './Home.js';
 import './Home.css';
-import Gallery from 'react-grid-gallery';
 import s1 from './images/GA/sofar-3.16.jpg';
 import s2 from './images/GA/sofar-3.19.jpg';
 import s3 from './images/GA/sofar-3.29.jpg';
@@ -19,140 +18,151 @@ import s14 from './images/GA/sofar-3.26.jpg';
 import s15 from './images/GA/sofar-2.14.jpg';
 import s16 from './images/GA/sofar-2.6.jpg';
 import s17 from './images/GA/mahler.jpg';
+import s18 from './images/GA/sofar-1.25.JPG';
+import s19 from './images/GA/sofar-1.6.JPG';
+import s20 from './images/GA/sofar-3.6.JPG';
+import Gallery from "react-photo-gallery";
+import Carousel, { Modal, ModalGateway } from "react-images";
 
 
 const IMAGES =
-    [{
+    [
+        {
+            src: s18,
+            width: 793,
+            height: 1224,
+            caption: "Poster for Sofar Sounds Boston show on March 3."
+        },
+        {
         src: s1,
-        thumbnail: s1,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s2,
-        thumbnail: s2,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s3,
-        thumbnail: s3,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s4,
-        thumbnail: s4,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s5,
-        thumbnail: s5,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s6,
-        thumbnail: s6,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s7,
-        thumbnail: s7,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s8,
-        thumbnail: s8,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s9,
-        thumbnail: s9,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s10,
-        thumbnail: s10,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s11,
-        thumbnail: s11,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s12,
-        thumbnail: s12,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s13,
-        thumbnail: s13,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s14,
-        thumbnail: s14,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s15,
-        thumbnail: s15,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s16,
-        thumbnail: s16,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s17,
-        thumbnail: s17,
-        thumbnailWidth: 793,
-        thumbnailHeight: 1224,
+        width: 793,
+        height: 1224,
+        caption: "Poster for Sofar Sounds Boston show on March 3."
+    },
+    {
+        src: s19,
+        width: 793,
+        height: 1224,
+        caption: "Poster for Sofar Sounds Boston show on March 3."
+    },
+    {
+        src: s20,
+        width: 793,
+        height: 1224,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     }
     ];
+
+//todo: add lightbox!
 
 class GraphicArt extends React.Component {
  render() { return(
     <div>
         <Home open={'posters'}/>
         <div className={'gallery-computer d-none d-sm-none d-md-block'}>
-        <Gallery className={'gallery'} images={IMAGES} enableImageSelection={false} showImageCount={false} rowHeight={612}/>
+            <Gallery photos={IMAGES} direction={"column"}/>
         </div>
         <div className={'d-sm-block d-md-none'}>
-            <Gallery className={'gallery'} images={IMAGES} enableImageSelection={false} showImageCount={false} rowHeight={612}/>
+            <Gallery photos={IMAGES}/>
         </div>
+
+
     </div>
  )}
 }

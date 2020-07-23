@@ -13,6 +13,7 @@
     "react-grid-gallery": "^0.5.5",
     "react-images": "^1.1.7",
     "react-photo-gallery": "^8.0.0",
+    "react-responsive-carousel": "^3.2.9",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.3.0",
     "reactstrap": "^8.5.1",

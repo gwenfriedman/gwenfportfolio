@@ -180,3 +180,52 @@
     margin-right: 10px;
     margin-bottom: 20px;
 }
+
+a {
+    display: block;
+}
+
+.home-img {
+  width: 30%;
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-top: -500px;
+}
+
+.img-2 {
+    margin-left: 40% !important;
+    margin-top: -305px !important;
+}
+
+.webDesign {
+    width: 65%;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.p2 {
+    margin-top: 20px !important;
+}
+
+.invisionLink {
+    color: #F92B00;
+    margin-left: 100px;
+}
+
+.sewing-carousel {
+    width: 550px;
+    margin-left: 100px;
+}
+
+.sewing-top {
+    margin-top: -515px;
+}
+
+.sewing-caption {
+    margin-left: 700px;
+    width: 375px;
+}
+
+.sewing-image {
+    width: 400px;
+}
