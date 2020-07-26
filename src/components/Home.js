@@ -12,7 +12,7 @@ class Header extends React.Component {
                     <div className={'d-none d-sm-none d-md-block'}>
                     <h1 className={'header'}> Gwendolyn Friedman </h1>
                     <div className={'underline'}></div>
-                    <div className={'menu'}>
+                    <div className={'sticky'}>
                         {this.props.open === 'posters' && (
                                 <Link to={`/graphicart`} style={{ textDecoration: 'none' }}>
                                     <div className={'hover-button--on block-expand red'}>Posters</div>
@@ -143,6 +143,8 @@ class Header extends React.Component {
                         )}
                     </div>
                     </div>
+
+
                 <div className={'d-sm-block d-md-none'}>
                     <h1 className={'mobile-head'}> Gwendolyn Friedman </h1>
                     <div className={'underline-mobile'}></div>

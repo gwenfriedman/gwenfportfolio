@@ -149,19 +149,50 @@ const IMAGES =
     }
     ];
 
-//todo: add lightbox!
-
 class GraphicArt extends React.Component {
- render() { return(
+    constructor(props) {
+        super(props);
+        this.state = {
+            currentImage: 0,
+            viewerIsOpen: false,
+        };
+    }
+
+    openLightbox = (e, {photo, index}) => {
+        this.setState({currentImage: index, viewerIsOpen: true});
+    };
+
+    closeLightbox = () => {
+        this.setState({currentImage: 0, viewerIsOpen: false})
+    };
+
+
+ render() {
+     const {viewerIsOpen, currentImage} = this.state;
+     return(
     <div>
         <Home open={'posters'}/>
         <div className={'gallery-computer d-none d-sm-none d-md-block'}>
-            <Gallery photos={IMAGES} direction={"column"}/>
+            <Gallery photos={IMAGES} direction={"column"} onClick={(e, {photo, index})=> this.openLightbox(e, {photo, index})}/>
         </div>
         <div className={'d-sm-block d-md-none'}>
             <Gallery photos={IMAGES}/>
         </div>
 
+        <ModalGateway>
+            {viewerIsOpen ? (
+                <Modal onClose={this.closeLightbox}>
+                    <Carousel
+                        currentIndex={currentImage}
+                        views={IMAGES.map(x => ({
+                            ...x,
+                            srcset: x.srcSet,
+                            caption: x.title
+                        }))}
+                    />
+                </Modal>
+            ) : null}
+        </ModalGateway>
 
     </div>
  )}

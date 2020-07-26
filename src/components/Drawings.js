@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import Home from './Home.js'
 import d1 from './images/GD/grandpa.png';
 import d2 from './images/GD/noah4.png';
@@ -35,6 +35,7 @@ import d32 from './images/GD/room.JPG';
 import d33 from './images/GD/self.JPG';
 import d34 from './images/GD/teddy.JPG';
 import d35 from './images/GD/winnie.JPG';
+import d36 from './images/GD/jan.JPG';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
@@ -44,17 +45,17 @@ const IMAGES =
         {
             src: d20,
             width: 2160,
-            height: 1620,
+            height: 1620
         },
         {
             src: d21,
             width: 1621,
-            height: 1261,
+            height: 1261
         },
         {
             src: d22,
             width: 2160,
-            height: 2149,
+            height: 2149
         },
         {
             src: d23,
@@ -68,6 +69,11 @@ const IMAGES =
         },
         {
             src: d25,
+            width: 2160,
+            height: 2160
+        },
+        {
+            src: d36,
             width: 2160,
             height: 2160
         },
@@ -133,8 +139,8 @@ const IMAGES =
     },
     {
         src: d3,
-        width: 1179,
-        height: 1754,
+        width: 491,
+        height: 730,
     },
     {
         src: d4,
@@ -227,9 +233,8 @@ class Drawings extends React.Component {
         };
     }
 
-    openLightbox = (e) => {
-        console.log('e', e);
-        this.setState({currentImage: 1, viewerIsOpen: true});
+    openLightbox = (e, {photo, index}) => {
+        this.setState({currentImage: index, viewerIsOpen: true});
     };
 
     closeLightbox = () => {
@@ -243,7 +248,7 @@ class Drawings extends React.Component {
          <Home open={'drawings'}/>
 
          <div className={'gallery-computer d-none d-sm-none d-md-block'}>
-             <Gallery photos={IMAGES} direction={"column"} onClick={(e)=> this.openLightbox(e)}/>
+             <Gallery photos={IMAGES} direction={"column"} onClick={(e, {photo, index})=> this.openLightbox(e, {photo, index})}/>
          </div>
          <div className={'d-sm-block d-md-none'}>
              <Gallery photos={IMAGES}/>
