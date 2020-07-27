@@ -4,6 +4,7 @@ import './Home.css';
 
 import aboutImage from './images/about.JPG';
 import aboutMobile from './images/about-mobile.JPG';
+import resume from './images/GwenFriedmanResume.pdf'
 
 
 class About extends React.Component {
@@ -15,7 +16,7 @@ class About extends React.Component {
         <h4> My name is Gwen and I'm a 4th year student at Northeastern University studying computer science
             and interaction design. In my free time I like to sew, draw, play with my dog,
             and work on my American Sign Language skills.</h4>
-        <h5 className={'resume'}> insert resume link </h5>
+        <a href={resume} target="_blank" className={'resume'}> Resume </a>
             <a href={'https://www.instagram.com/art.by.gwen/'}> Instagram </a>
             <a href={'https://github.com/gwenfriedman'}> Github </a>
             <a href={'https://www.linkedin.com/in/gwendolyn-friedman/'}> LinkedIn </a>
@@ -27,7 +28,7 @@ class About extends React.Component {
             <h4> My name is Gwen and I'm a 4th year student at Northeastern University studying computer science
                 and interaction design. In my free time I like to sew, draw, play with my dog,
                 and work on my American Sign Language skills.</h4>
-            <h5 className={'resume'}> insert resume link </h5>
+            <a href={resume} target="_blank" className={'resume'}> Resume </a>
             <a href={'https://www.instagram.com/art.by.gwen/'}> Instagram </a>
             <a href={'https://github.com/gwenfriedman'}> Github </a>
             <a href={'https://www.linkedin.com/in/gwendolyn-friedman/'}> LinkedIn </a>
@@ -39,7 +40,7 @@ class About extends React.Component {
             <h4> My name is Gwen and I'm a 4th year student at Northeastern University studying computer science
                 and interaction design. In my free time I like to sew, draw, play with my dog,
                 and work on my American Sign Language skills.</h4>
-            <h5 className={'resume'}> insert resume link </h5>
+            <a href={resume} target="_blank" className={'resume'}> Resume </a>
             <a href={'https://www.instagram.com/art.by.gwen/'}> Instagram </a>
             <a href={'https://github.com/gwenfriedman'}> Github </a>
             <a href={'https://www.linkedin.com/in/gwendolyn-friedman/'}> LinkedIn </a>

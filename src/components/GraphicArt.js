@@ -31,121 +31,121 @@ const IMAGES =
             src: s18,
             width: 436,
             height: 675,
-            caption: "Poster for Sofar Sounds Boston show on March 3."
+            caption: "Poster for Sofar Sounds Boston show on January 25, 2020 at WeWork."
         },
         {
         src: s1,
             width: 436,
             height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on March 16, 2019."
     },
     {
         src: s2,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on March 19, 2019."
     },
     {
         src: s3,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on November 22, 2019 at Industry Lab."
     },
     {
         src: s4,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on March 29, 2019."
     },
     {
         src: s5,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on March 27, 2019."
     },
     {
         src: s6,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on April 12, 2019."
     },
     {
         src: s7,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on April, 18, 2019 at the Canopy Room."
     },
     {
         src: s8,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on March 8, 2019."
     },
     {
         src: s9,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on April 5, 2019."
     },
     {
         src: s10,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on April 3, 2019."
     },
     {
         src: s11,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on September 5, 2019 on the Schooner Roseway."
     },
     {
         src: s12,
         width: 793,
         height: 1224,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on November 16, 2019 at Musicians Playground."
     },
     {
         src: s13,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show at Ash and Rose."
     },
     {
         src: s14,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on March 26, 2019."
     },
     {
         src: s15,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on February 14, 2019 at Ash and Rose."
     },
     {
         src: s16,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on February 6, 2019 at City Winery."
     },
     {
         src: s19,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on January 6, 2020 at Turtle Swamp Brewing."
     },
     {
         src: s20,
         width: 436,
         height: 675,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
+        caption: "Poster for Sofar Sounds Boston show on March 6, 2020 at the Foundation Room."
     },
         {
             src: s17,
             width: 436,
             height: 620,
-            caption: "Poster for Sofar Sounds Boston show on March 3."
+            caption: "Poster made for Typography 1 class, for BSO show."
         }
     ];
 
