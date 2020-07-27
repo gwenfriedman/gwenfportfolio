@@ -1,27 +1,26 @@
 import React from 'react';
 import Home from './Home.js';
 import './Home.css';
-import s1 from './images/GA/sofar-3.16.jpg';
-import s2 from './images/GA/sofar-3.19.jpg';
-import s3 from './images/GA/sofar-3.29.jpg';
-import s4 from './images/GA/sofar-3.27.jpg';
-import s5 from './images/GA/sofar-11.22.jpg';
-import s6 from './images/GA/sofar-4.12.jpg';
-import s7 from './images/GA/sofar-4.18.jpg';
-import s8 from './images/GA/sofar-3.8.jpg';
-import s9 from './images/GA/sofar-4.5.jpg';
-import s10 from './images/GA/sofar-4.3.jpg';
-import s11 from './images/GA/sofar-9.5.jpg';
-import s12 from './images/GA/sofar-11.16.jpg';
-import s13 from './images/GA/sofar-12.11.jpg';
-import s14 from './images/GA/sofar-3.26.jpg';
-import s15 from './images/GA/sofar-2.14.jpg';
-import s16 from './images/GA/sofar-2.6.jpg';
-import s17 from './images/GA/mahler.jpg';
+import s1 from './images/GA/art-deco.png';
+import s2 from './images/GA/water-color.png';
+import s3 from './images/GA/rainbow.png';
+import s4 from './images/GA/flamingo.png';
+import s5 from './images/GA/wavy.png';
+import s6 from './images/GA/dragon.png';
+import s7 from './images/GA/boston.png';
+import s8 from './images/GA/nancy.png';
+import s9 from './images/GA/roses.png';
+import s10 from './images/GA/flowers.png';
+import s11 from './images/GA/mermaid.png';
+import s12 from './images/GA/fox.png';
+import s13 from './images/GA/winter.png';
+import s14 from './images/GA/retro.png';
+import s15 from './images/GA/love.png';
+import s16 from './images/GA/city.png';
+import s17 from './images/GA/mahler.png';
 import s18 from './images/GA/jungle.png';
-// import s18 from './images/GA/sofar-1.25.JPG';
-import s19 from './images/GA/sofar-1.6.JPG';
-import s20 from './images/GA/sofar-3.6.JPG';
+import s19 from './images/GA/swamp.png';
+import s20 from './images/GA/red.png';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
@@ -36,68 +35,68 @@ const IMAGES =
         },
         {
         src: s1,
-        width: 793,
-        height: 1224,
+            width: 436,
+            height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s2,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s3,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s4,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s5,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s6,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s7,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s8,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s9,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s10,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s11,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
@@ -108,46 +107,46 @@ const IMAGES =
     },
     {
         src: s13,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s14,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s15,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s16,
-        width: 793,
-        height: 1224,
-        caption: "Poster for Sofar Sounds Boston show on March 3."
-    },
-    {
-        src: s17,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s19,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
     },
     {
         src: s20,
-        width: 793,
-        height: 1224,
+        width: 436,
+        height: 675,
         caption: "Poster for Sofar Sounds Boston show on March 3."
-    }
+    },
+        {
+            src: s17,
+            width: 436,
+            height: 620,
+            caption: "Poster for Sofar Sounds Boston show on March 3."
+        }
     ];
 
 class GraphicArt extends React.Component {
