@@ -45,7 +45,8 @@ const IMAGES =
         {
             src: d20,
             width: 2160,
-            height: 1620
+            height: 1620,
+            caption: "Poster for Sofar Sounds Boston show on March 3."
         },
         {
             src: d21,
@@ -262,7 +263,7 @@ class Drawings extends React.Component {
                          views={IMAGES.map(x => ({
                              ...x,
                              srcset: x.srcSet,
-                             caption: x.title
+                             caption: x.caption
                          }))}
                      />
                  </Modal>

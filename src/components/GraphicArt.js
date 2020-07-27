@@ -18,7 +18,8 @@ import s14 from './images/GA/sofar-3.26.jpg';
 import s15 from './images/GA/sofar-2.14.jpg';
 import s16 from './images/GA/sofar-2.6.jpg';
 import s17 from './images/GA/mahler.jpg';
-import s18 from './images/GA/sofar-1.25.JPG';
+import s18 from './images/GA/jungle.png';
+// import s18 from './images/GA/sofar-1.25.JPG';
 import s19 from './images/GA/sofar-1.6.JPG';
 import s20 from './images/GA/sofar-3.6.JPG';
 import Gallery from "react-photo-gallery";
@@ -29,8 +30,8 @@ const IMAGES =
     [
         {
             src: s18,
-            width: 793,
-            height: 1224,
+            width: 436,
+            height: 675,
             caption: "Poster for Sofar Sounds Boston show on March 3."
         },
         {
@@ -187,7 +188,7 @@ class GraphicArt extends React.Component {
                         views={IMAGES.map(x => ({
                             ...x,
                             srcset: x.srcSet,
-                            caption: x.title
+                            caption: x.caption
                         }))}
                     />
                 </Modal>

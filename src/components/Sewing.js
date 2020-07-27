@@ -23,7 +23,7 @@ import s19 from './images/Sewing/dress9.jpg';
 import s20 from './images/Sewing/dress10.jpg';
 import s21 from './images/Sewing/jacket1.jpg';
 import s22 from './images/Sewing/bowtie1.jpg';
-import s23 from './images/Sewing/prom.jpg';
+// import s23 from './images/Sewing/prom.jpg';
 import s24 from './images/Sewing/2quilt1.JPG';
 import s25 from './images/Sewing/2quilt2.JPG';
 import s26 from './images/Sewing/3quilt.JPG';
@@ -50,6 +50,37 @@ import s46 from './images/Sewing/velvet2.JPG';
 import s47 from './images/Sewing/velvet3.JPG';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Gallery from "react-photo-gallery";
+
+
+// const IMAGES = [
+//
+//     {
+//         src: s1,
+//         width: 3644,
+//         height: 3921,
+//         caption: "Poster for Sofar Sounds Boston show on March 3."
+//     },
+//     {
+//         src: s2,
+//         width: 3634,
+//         height: 3719,
+//         caption: "Poster for Sofar Sounds Boston show on March 3."
+//     },
+//     {
+//         src: s3,
+//         width: 5472,
+//         height: 3648,
+//         caption: "Poster for Sofar Sounds Boston show on March 3."
+//     },
+//     {
+//         src: s4,
+//         width: 5472,
+//         height: 3648,
+//         caption: "Poster for Sofar Sounds Boston show on March 3."
+//     }
+//
+// ];
 
 
 
@@ -57,6 +88,11 @@ class Sewing extends React.Component {
  render() { return(
     <div>
         <Home open={'sewing'}/>
+
+        {/*<div className={'gallery-computer d-none d-sm-none d-md-block'}>*/}
+        {/*    <Gallery photos={IMAGES} onClick={(e, {photo, index})=> this.openLightbox(e, {photo, index})}/>*/}
+        {/*</div>*/}
+
         <div className={'sewing-carousel sewing-top'}>
         <Carousel renderThumbs={() => []}>
             <div>
@@ -308,7 +344,7 @@ class Sewing extends React.Component {
         <img className={'sewing-image'} src={s10}/>
         <img className={'sewing-image'} src={s21}/>
         <img className={'sewing-image'} src={s22}/>
-        <img className={'sewing-image'} src={s23}/>
+        {/*<img className={'sewing-image'} src={s23}/>*/}
         <img className={'sewing-image'} src={s35}/>
         <img className={'sewing-image'} src={s36}/>
    </div>
