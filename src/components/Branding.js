@@ -1,14 +1,15 @@
 import React from 'react';
 import Home from './Home.js'
 import {Carousel} from "react-responsive-carousel";
-import b1 from "./images/branding/peacock.png";
-import b2 from "./images/branding/1.jpg";
-import b3 from "./images/branding/2.png";
+import b1 from "./images/branding/peacock2.png";
+import b2 from "./images/branding/MM2.png";
+import b3 from "./images/branding/MM3.png";
 import b4 from "./images/branding/hat1.png";
 import b5 from "./images/branding/hat2.png";
-import b6 from "./images/branding/hat3.jpg";
-import b7 from "./images/branding/hat4.jpg";
-import b8 from "./images/branding/hat5.png";
+import b6 from "./images/branding/hat3.png";
+import b7 from "./images/branding/hat4.png";
+import b13 from "./images/branding/hat6.png";
+import b14 from "./images/branding/hat7.png";
 import b9 from "./images/branding/pe1.png";
 import b10 from "./images/branding/pe2.png";
 import b11 from "./images/branding/pe3.png";
@@ -33,6 +34,7 @@ class Branding extends React.Component {
                 </div>
             </Carousel>
         </div>
+        <p className={'carousel-text'}> test info </p>
         <div className={'sewing-carousel'}>
             <Carousel renderThumbs={() => []}>
                 <div>
@@ -48,10 +50,15 @@ class Branding extends React.Component {
                     <img src={b7} />
                 </div>
                 <div>
-                    <img src={b8} />
+                    <img src={b13} />
+                </div>
+                <div>
+                    <img src={b14} />
                 </div>
             </Carousel>
         </div>
+
+        <p className={'carousel-text'}> test info </p>
 
         <div className={'sewing-carousel'}>
             <Carousel renderThumbs={() => []}>
@@ -69,6 +76,8 @@ class Branding extends React.Component {
                 </div>
             </Carousel>
         </div>
+
+        <p className={'carousel-text'}> test info </p>
     </div>
    )
  }

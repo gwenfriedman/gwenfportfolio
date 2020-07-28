@@ -43,6 +43,12 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 const IMAGES =
     [
         {
+            src: d33,
+            width: 571,
+            height: 785,
+            caption: "Self portrait - drawn with Procreate"
+        },
+        {
             src: d20,
             width: 720,
             height: 540,
@@ -55,22 +61,16 @@ const IMAGES =
             caption: "View from the T - drawn with Procreate"
         },
         {
-            src: d22,
-            width: 720,
-            height: 716,
-            caption: "Boston buildings - drawn with Procreate"
-        },
-        {
-            src: d23,
-            width: 785,
-            height: 785,
-            caption: "Copilot tshirt design contest entry - drawn with Procreate"
-        },
-        {
             src: d24,
             width: 785,
             height: 785,
             caption: "Copilot tshirt design contest winner - drawn with Procreate"
+        },
+        {
+            src: d22,
+            width: 720,
+            height: 716,
+            caption: "Boston buildings - drawn with Procreate"
         },
         {
             src: d25,
@@ -83,6 +83,12 @@ const IMAGES =
             width: 720,
             height: 720,
             caption: "Janice the bull terrior - drawn with Procreate"
+        },
+        {
+            src: d23,
+            width: 785,
+            height: 785,
+            caption: "Copilot tshirt design contest entry - drawn with Procreate"
         },
         {
             src: d26,
@@ -125,12 +131,6 @@ const IMAGES =
             width: 867,
             height: 682,
             caption: "Home - drawn with Procreate"
-        },
-        {
-            src: d33,
-            width: 571,
-            height: 785,
-            caption: "Self portrait - drawn with Procreate"
         },
         {
             src: d34,

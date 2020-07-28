@@ -223,3 +223,10 @@ div.sticky {
     margin-left: 78%;
     margin-top: 110px;
 }
+
+.carousel-text {
+    margin-top: -400px;
+    margin-left: 700px;
+    margin-bottom: 400px;
+    width: 375px;
+}

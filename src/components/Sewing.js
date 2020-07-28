@@ -1,11 +1,11 @@
 import React from 'react';
 import Home from './Home.js'
 
-import s1 from './images/Sewing/coat1.jpg';
-import s2 from './images/Sewing/coat2.jpg';
-import s3 from './images/Sewing/coat3.jpg';
-import s4 from './images/Sewing/coat4.jpg';
-import s5 from './images/Sewing/coat5.jpg';
+import s1 from './images/Sewing/coat1.png';
+import s2 from './images/Sewing/coat2.png';
+import s3 from './images/Sewing/coat3.png';
+import s4 from './images/Sewing/coat4.png';
+import s5 from './images/Sewing/coat5.png';
 import s6 from './images/Sewing/set1.jpg';
 import s7 from './images/Sewing/set2.jpg';
 import s8 from './images/Sewing/set3.jpg';
@@ -22,19 +22,18 @@ import s18 from './images/Sewing/dress8.jpg';
 import s19 from './images/Sewing/dress9.jpg';
 import s20 from './images/Sewing/dress10.jpg';
 import s21 from './images/Sewing/jacket1.jpg';
-import s22 from './images/Sewing/bowtie1.jpg';
 // import s23 from './images/Sewing/prom.jpg';
 import s24 from './images/Sewing/2quilt1.JPG';
 import s25 from './images/Sewing/2quilt2.JPG';
 import s26 from './images/Sewing/3quilt.JPG';
 import s27 from './images/Sewing/4quilt.JPG';
-import s28 from './images/Sewing/betsy1.jpg';
-import s29 from './images/Sewing/betsy2.jpg';
-import s30 from './images/Sewing/goldFringe1.JPG';
-import s31 from './images/Sewing/goldfringe2.jpg';
-import s32 from './images/Sewing/goldfringe3.JPG';
-import s33 from './images/Sewing/goldfringe4.JPG';
-import s34 from './images/Sewing/goldfringe5.JPG';
+import s28 from './images/Sewing/betsy1.png';
+import s29 from './images/Sewing/betsy2.png';
+import s30 from './images/Sewing/goldfringe1.png';
+import s31 from './images/Sewing/goldfringe2.png';
+import s32 from './images/Sewing/goldfringe3.png';
+import s33 from './images/Sewing/goldfringe4.png';
+import s34 from './images/Sewing/goldfringe5.png';
 import s35 from './images/Sewing/jumpsuit.jpg';
 import s36 from './images/Sewing/make&mend.JPG';
 import s37 from './images/Sewing/quilt1.png';
@@ -107,10 +106,13 @@ class Sewing extends React.Component {
             <div>
                 <img src={s4} />
             </div>
+            <div>
+                <img src={s5} />
+            </div>
         </Carousel>
         </div>
 
-        <div class="caption sewing-caption">
+        <div class="carousel-text">
             <p> Jacket made out of old pants. Coat and Dress made of old pants and tablecloth. </p>
         </div>
 
@@ -343,7 +345,6 @@ class Sewing extends React.Component {
         <img className={'sewing-image'} src={s9}/>
         <img className={'sewing-image'} src={s10}/>
         <img className={'sewing-image'} src={s21}/>
-        <img className={'sewing-image'} src={s22}/>
         {/*<img className={'sewing-image'} src={s23}/>*/}
         <img className={'sewing-image'} src={s35}/>
         <img className={'sewing-image'} src={s36}/>
