@@ -21,7 +21,7 @@ function App() {
 	        <Route exact path='/'
         	 component={Home}/>
 
-            <Route exact path='/mobilemenu'
+            <Route exact path='/mobilemenu/:page'
               component={MobileMenu}/>
 
             <Route exact path='/graphicart'

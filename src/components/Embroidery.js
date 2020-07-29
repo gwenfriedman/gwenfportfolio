@@ -18,29 +18,80 @@ class Embroidery extends React.Component {
     <div>
         <Home className={'sticky'} open={'embroidery'}/>
 
-        <div className={'sewing-carousel sewing-top'}>
+
+            <div className={'sewing-top sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+                <Carousel renderThumbs={() => []}>
+                    <div>
+                        <img src={e1} />
+                    </div>
+                    <div>
+                        <img src={e2} />
+                    </div>
+                    <div>
+                        <img src={e3} />
+                    </div>
+                </Carousel>
+            </div>
+            <div className={'sewing-carousel-md sewing-top d-none d-sm-none d-md-block d-lg-none'}>
+                <Carousel renderThumbs={() => []}>
+                    <div>
+                        <img src={e1} />
+                    </div>
+                    <div>
+                        <img src={e2} />
+                    </div>
+                    <div>
+                        <img src={e3} />
+                    </div>
+                </Carousel>
+            </div>
+            <div className={'sewing-carousel-sm sewing-top d-sm-block d-md-none d-lg-none'}>
+                <Carousel renderThumbs={() => []}>
+                    <div>
+                        <img src={e1} />
+                    </div>
+                    <div>
+                        <img src={e2} />
+                    </div>
+                    <div>
+                        <img src={e3} />
+                    </div>
+                </Carousel>
+            </div>
+
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block dragon'}>
+            Dragon embroidered on denim shirt.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Dragon embroidered on denim shirt.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Dragon embroidered on denim shirt.
+        </p>
+
+        {/*--------------*/}
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
             <Carousel renderThumbs={() => []}>
                 <div>
-                    <img src={e1} />
+                    <img src={e4} />
                 </div>
                 <div>
-                    <img src={e2} />
-                </div>
-                <div>
-                    <img src={e3} />
+                    <img src={e5} />
                 </div>
             </Carousel>
         </div>
-
-       <div className="row justify-content-md-center mt-2">
-             <div className="">
-                   <div class="col caption">
-                     <p> Dragon embroidered on denim shirt. </p>
-               </div>
-             </div>
-       </div>
-
-        <div className={'sewing-carousel'}>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={e4} />
+                </div>
+                <div>
+                    <img src={e5} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={e4} />
@@ -51,16 +102,20 @@ class Embroidery extends React.Component {
             </Carousel>
         </div>
 
-      <div className="row justify-content-md-center mt-2">
-            <div className="">
-                  <div class="col caption">
-                    <p> Tanktop with woman embroidered on it. </p>
-              </div>
-            </div>
-      </div>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Woman embroidered on white tank top.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Woman embroidered on white tank top.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Woman embroidered on white tanktop.
+        </p>
+
+        {/*--------------*/}
 
 
-        <div className={'sewing-carousel'}>
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={e6} />
@@ -71,16 +126,42 @@ class Embroidery extends React.Component {
             </Carousel>
         </div>
 
-    <div className="row justify-content-md-center mt-2">
-          <div className="">
-                <div class="col caption">
-                  <p> Denim skirt with Jean Dubuffet inspired embroidery. </p>
-            </div>
-          </div>
-    </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={e6} />
+                </div>
+                <div>
+                    <img src={e7} />
+                </div>
+            </Carousel>
+        </div>
+
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={e6} />
+                </div>
+                <div>
+                    <img src={e7} />
+                </div>
+            </Carousel>
+        </div>
+
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block dubuffet'}>
+            Jean Dubuffet inspired art embroidered on denim skirt.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Jean Dubuffet inspired art embroidered on denim skirt.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Jean Dubuffet inspired art embroidered on denim skirt.
+        </p>
+
+        {/*--------------*/}
 
 
-        <div className={'sewing-carousel'}>
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={e8} />
@@ -91,9 +172,53 @@ class Embroidery extends React.Component {
             </Carousel>
         </div>
 
-        <img className={'sewing-image'} src={e10} />
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={e8} />
+                </div>
+                <div>
+                    <img src={e9} />
+                </div>
+            </Carousel>
+        </div>
 
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={e8} />
+                </div>
+                <div>
+                    <img src={e9} />
+                </div>
+            </Carousel>
+        </div>
 
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block dubuffet'}>
+            Mini embroidery hoop necklaces. Laser cut, embroidered, assembled.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Mini embroidery hoop necklaces. Laser cut, embroidered, assembled.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Mini embroidery hoop necklaces. Laser cut, embroidered, assembled.
+        </p>
+
+        {/*--------------*/}
+
+        <img className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'} src={e10} />
+        <img className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'} src={e10} />
+        <img className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'} src={e10} />
+
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Denim dress embroidered with flowers.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none sewing-image-text'}>
+            Denim dress embroidered with flowers.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none sewing-image-text'}>
+            Denim dress embroidered with flowers.
+        </p>
 
    </div>
    )

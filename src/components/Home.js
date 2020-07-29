@@ -13,12 +13,12 @@ class Header extends React.Component {
                     <h1 className={'header'}> Gwendolyn Friedman </h1>
                     <div className={'underline'}></div>
                     <div className={'sticky'}>
-                        {this.props.open === 'posters' && (
+                        {this.props.open === 'graphicart' && (
                                 <Link to={`/graphicart`} style={{ textDecoration: 'none' }}>
                                     <div className={'hover-button--on block-expand red'}>Posters</div>
                                 </Link>
                         )}
-                        {this.props.open !== 'posters' && (
+                        {this.props.open !== 'graphicart' && (
                         <div className='hover-button'>
                             <div>
                                 <div className={'hover-button--off block red'}></div>
@@ -87,12 +87,12 @@ class Header extends React.Component {
                         </div>
                         )}
 
-                        {this.props.open === 'web' && (
+                        {this.props.open === 'webdesign' && (
                             <Link to={`/webdesign`} style={{ textDecoration: 'none' }}>
                                 <div className={'hover-button--on block-expand light-blue'}>Web Design</div>
                             </Link>
                         )}
-                        {this.props.open !== 'web' && (
+                        {this.props.open !== 'webdesign' && (
                         <div className='hover-button'>
                             <div>
                                 <div className={'hover-button--off block light-blue'}></div>
@@ -149,7 +149,7 @@ class Header extends React.Component {
                     <h1 className={'mobile-head'}> Gwendolyn Friedman </h1>
                     <div className={'underline-mobile'}></div>
 
-                    <Link to={`/mobilemenu`}>
+                    <Link to={'/mobilemenu/' + this.props.open}>
                 <div className={'menu mobile-menu'}>
                     <div>
                         <div className={'hamburger red'}></div>

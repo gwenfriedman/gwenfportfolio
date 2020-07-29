@@ -171,7 +171,7 @@ class GraphicArt extends React.Component {
      const {viewerIsOpen, currentImage} = this.state;
      return(
     <div>
-        <Home open={'posters'}/>
+        <Home open={'graphicart'}/>
         <div className={'gallery-computer d-none d-sm-none d-md-block'}>
             <Gallery photos={IMAGES} direction={"column"} onClick={(e, {photo, index})=> this.openLightbox(e, {photo, index})}/>
         </div>

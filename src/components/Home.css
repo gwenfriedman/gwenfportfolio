@@ -167,21 +167,40 @@ a {
     display: block;
 }
 
+.web-images {
+    padding-left: 80px;
+}
+
 .home-img {
-  width: 30%;
+    width: 30%;
     border: 1px solid black;
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 35px;
 }
 
-.img-2 {
-    margin-left: 40% !important;
-    margin-top: -305px !important;
+.home-img-md {
+    width: 60%;
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-top: 35px;
+}
+
+.home-img-sm {
+    width: 90%;
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-top: 35px;
 }
 
 .webDesign {
-    width: 65%;
+    width: 60%;
     margin-left: 100px;
+    margin-top: 20px;
+}
+
+.webDesign-sm {
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 20px;
 }
 
@@ -192,6 +211,11 @@ a {
 .invisionLink {
     color: #F92B00;
     margin-left: 100px;
+}
+
+.invisionLink-sm {
+    color: #F92B00;
+    margin-left: 40px;
 }
 
 .sewing-carousel {
@@ -294,4 +318,14 @@ div.sticky {
 
 .sewing-image-text {
     margin-top: 8px !important;
+}
+
+.dragon {
+    margin-top: -320px;
+    margin-bottom: 300px;
+}
+
+.dubuffet {
+    margin-top: -250px;
+    margin-bottom: 230px;
 }

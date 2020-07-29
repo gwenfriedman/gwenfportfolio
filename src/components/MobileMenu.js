@@ -8,7 +8,7 @@ class MobileMenu extends React.Component {
         return (
             <div>
                 {/*todo: fix this, should link to whatever was open before*/}
-                <Link to={`/graphicart`}>
+                <Link to={`/${this.props.match.params.page}`}>
                     <div className={'close-btn'}>X</div>
                 </Link>
                                 <Link to={`/graphicart`} style={{ textDecoration: 'none' }}>
