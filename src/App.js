@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 import Drawings from './components/Drawings.js'
 import Posters from './components/Posters.js'
-import Home from './components/Home.js'
 import MobileMenu from './components/MobileMenu.js'
 import WebDesign from './components/WebDesign.js'
 import About from './components/About.js'
@@ -18,8 +17,6 @@ function App() {
   return (
   	<Router>
 	    <div>
-	        {/*<Route exact path='/'*/}
-        	{/* component={Home}/>*/}
             <Route exact path='/'
                    component={Posters}/>
 
