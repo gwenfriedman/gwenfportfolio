@@ -23,10 +23,10 @@ import s19 from './images/Sewing/dress9.jpg';
 import s20 from './images/Sewing/dress10.jpg';
 import s21 from './images/Sewing/jacket1.jpg';
 // import s23 from './images/Sewing/prom.jpg';
-import s24 from './images/Sewing/2quilt1.JPG';
-import s25 from './images/Sewing/2quilt2.JPG';
-import s26 from './images/Sewing/3quilt.JPG';
-import s27 from './images/Sewing/4quilt.JPG';
+import s24 from './images/Sewing/2quilt1.png';
+import s25 from './images/Sewing/2quilt2.png';
+import s26 from './images/Sewing/3quilt.png';
+import s27 from './images/Sewing/4quilt.png';
 import s28 from './images/Sewing/betsy1.png';
 import s29 from './images/Sewing/betsy2.png';
 import s30 from './images/Sewing/goldfringe1.png';
@@ -41,58 +41,24 @@ import s38 from './images/Sewing/quilt2.png';
 import s39 from './images/Sewing/quilt3.png';
 import s40 from './images/Sewing/quiltJacket1.JPG';
 import s41 from './images/Sewing/quiltJacket2.JPG';
-import s42 from './images/Sewing/redSet1.JPG';
-import s43 from './images/Sewing/redSet2.JPG';
-import s44 from './images/Sewing/redSet3.JPG';
+import s42 from './images/Sewing/redSet1.png';
+import s43 from './images/Sewing/redSet2.png';
+import s44 from './images/Sewing/redSet3.png';
 import s45 from './images/Sewing/velvet1.JPG';
 import s46 from './images/Sewing/velvet2.JPG';
 import s47 from './images/Sewing/velvet3.JPG';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Gallery from "react-photo-gallery";
-
-
-// const IMAGES = [
-//
-//     {
-//         src: s1,
-//         width: 3644,
-//         height: 3921,
-//         caption: "Poster for Sofar Sounds Boston show on March 3."
-//     },
-//     {
-//         src: s2,
-//         width: 3634,
-//         height: 3719,
-//         caption: "Poster for Sofar Sounds Boston show on March 3."
-//     },
-//     {
-//         src: s3,
-//         width: 5472,
-//         height: 3648,
-//         caption: "Poster for Sofar Sounds Boston show on March 3."
-//     },
-//     {
-//         src: s4,
-//         width: 5472,
-//         height: 3648,
-//         caption: "Poster for Sofar Sounds Boston show on March 3."
-//     }
-//
-// ];
-
-
 
 class Sewing extends React.Component {
  render() { return(
     <div>
         <Home open={'sewing'}/>
 
-        {/*<div className={'gallery-computer d-none d-sm-none d-md-block'}>*/}
-        {/*    <Gallery photos={IMAGES} onClick={(e, {photo, index})=> this.openLightbox(e, {photo, index})}/>*/}
-        {/*</div>*/}
+        <img className={'sewing-image sewing-top'} src={s35}/>
 
-        <div className={'sewing-carousel sewing-top'}>
+
+        <div className={'sewing-carousel'}>
         <Carousel renderThumbs={() => []}>
             <div>
                 <img src={s1} />
@@ -116,6 +82,17 @@ class Sewing extends React.Component {
             <p> Jacket made out of old pants. Coat and Dress made of old pants and tablecloth. </p>
         </div>
 
+        <div className={'sewing-carousel'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s28} />
+                </div>
+                <div>
+                    <img src={s29} />
+                </div>
+            </Carousel>
+        </div>
+
 
         <div className={'sewing-carousel'}>
             <Carousel renderThumbs={() => []}>
@@ -131,16 +108,7 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s28} />
-                </div>
-                <div>
-                    <img src={s29} />
-                </div>
-            </Carousel>
-        </div>
+        <img className={'sewing-image'} src={s36}/>
 
         <div className={'sewing-carousel'}>
             <Carousel renderThumbs={() => []}>
@@ -346,8 +314,6 @@ class Sewing extends React.Component {
         <img className={'sewing-image'} src={s10}/>
         <img className={'sewing-image'} src={s21}/>
         {/*<img className={'sewing-image'} src={s23}/>*/}
-        <img className={'sewing-image'} src={s35}/>
-        <img className={'sewing-image'} src={s36}/>
    </div>
    )
  }

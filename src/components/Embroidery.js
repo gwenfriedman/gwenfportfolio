@@ -1,8 +1,8 @@
 import React from 'react';
 import Home from './Home.js'
-import e1 from './images/Embroidery/19.jpg';
-import e2 from './images/Embroidery/10.jpg';
-import e3 from './images/Embroidery/shirt1.jpg';
+import e1 from './images/Embroidery/19.png';
+import e2 from './images/Embroidery/10.png';
+import e3 from './images/Embroidery/shirt1.png';
 import e4 from './images/Embroidery/shirt2.jpg';
 import e5 from './images/Embroidery/7.jpg';
 import e6 from './images/Embroidery/12.jpg';
@@ -91,7 +91,7 @@ class Embroidery extends React.Component {
             </Carousel>
         </div>
 
-        <img src={e10} />
+        <img className={'sewing-image'} src={e10} />
 
 
 

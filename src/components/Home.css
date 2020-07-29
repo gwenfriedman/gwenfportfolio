@@ -195,8 +195,17 @@ a {
 }
 
 .sewing-carousel {
-    width: 550px;
+    width: 35%;
     margin-left: 100px;
+}
+
+.sewing-carousel-md {
+    width: 60%;
+    margin-left: 100px;
+}
+
+.sewing-carousel-sm {
+    width: 100%;
 }
 
 .sewing-top {
@@ -210,6 +219,9 @@ a {
 
 .sewing-image {
     width: 400px;
+    display: block;
+    margin-left: 100px;
+    margin-bottom: 30px;
 }
 
 .peacock-group {
@@ -225,8 +237,26 @@ div.sticky {
 }
 
 .carousel-text {
-    margin-top: -400px;
-    margin-left: 700px;
-    margin-bottom: 400px;
-    width: 375px;
+    margin-top: -375px;
+    margin-left: 45%;
+    margin-bottom: 150px;
+    margin-right: 25%;
+}
+
+.carousel-text-md {
+    margin-top: -50px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-right: 245px;
+}
+
+.carousel-text-sm {
+    margin-top: -50px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    margin-right: 20px;
+}
+
+.hatsassy {
+    margin-bottom: 150px;
 }
