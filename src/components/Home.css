@@ -260,3 +260,38 @@ div.sticky {
 .hatsassy {
     margin-bottom: 150px;
 }
+
+.jumpsuit {
+    margin-bottom: 350px;
+}
+.jumpsuit-2 {
+    margin-top: 20px;
+}
+
+.quilt {
+    margin-bottom: 350px;
+}
+
+.quilt-text {
+    margin-top: -250px !important;
+    margin-bottom: 200px;
+}
+
+
+.make-mend {
+    margin-bottom: 400px;
+}
+
+.daph-quilt {
+    margin-bottom: 350px;
+    margin-top:-230px !important;
+    margin-bottom: 200px !important;
+}
+
+.make-mend-md {
+    margin-top: 8px !important;
+}
+
+.sewing-image-text {
+    margin-top: 8px !important;
+}

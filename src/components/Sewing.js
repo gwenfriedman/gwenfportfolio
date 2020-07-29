@@ -55,34 +55,117 @@ class Sewing extends React.Component {
     <div>
         <Home open={'sewing'}/>
 
-        <img className={'sewing-image sewing-top'} src={s35}/>
+        <img className={'sewing-carousel sewing-top d-none d-sm-none d-md-none d-lg-block'} src={s35}/>
+        <img className={'sewing-carousel-md sewing-top d-none d-sm-none d-md-block d-lg-none'} src={s35}/>
+        <img className={'sewing-carousel-sm sewing-top d-sm-block d-md-none d-lg-none'} src={s35}/>
+
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Jumpsuit made from thrifted curtains. Zipper closure up the side. Ruffles down and around the bottom of each leg.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none jumpsuit-2'}>
+            Jumpsuit made from thrifted curtains. Zipper closure up the side. Ruffles down and around the bottom of each leg.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none jumpsuit-2'}>
+            Jumpsuit made from thrifted curtains. Zipper closure up the side. Ruffles down and around the bottom of each leg.
+        </p>
+
+        {/*--------------*/}
 
 
-        <div className={'sewing-carousel'}>
-        <Carousel renderThumbs={() => []}>
-            <div>
-                <img src={s1} />
-            </div>
-            <div>
-                <img src={s2} />
-            </div>
-            <div>
-                <img src={s3} />
-            </div>
-            <div>
-                <img src={s4} />
-            </div>
-            <div>
-                <img src={s5} />
-            </div>
-        </Carousel>
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s1} />
+                </div>
+                <div>
+                    <img src={s2} />
+                </div>
+                <div>
+                    <img src={s3} />
+                </div>
+                <div>
+                    <img src={s4} />
+                </div>
+                <div>
+                    <img src={s5} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s1} />
+                </div>
+                <div>
+                    <img src={s2} />
+                </div>
+                <div>
+                    <img src={s3} />
+                </div>
+                <div>
+                    <img src={s4} />
+                </div>
+                <div>
+                    <img src={s5} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s1} />
+                </div>
+                <div>
+                    <img src={s2} />
+                </div>
+                <div>
+                    <img src={s3} />
+                </div>
+                <div>
+                    <img src={s4} />
+                </div>
+                <div>
+                    <img src={s5} />
+                </div>
+            </Carousel>
         </div>
 
-        <div class="carousel-text">
-            <p> Jacket made out of old pants. Coat and Dress made of old pants and tablecloth. </p>
-        </div>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Grey and white jacket made out of thrifted pants. Lined with light pink polyester.
+            Blue coat and yellow dress made of thrifted pants and tablecloth.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Grey and white jacket made out of thrifted pants. Lined with light pink polyester.
+            Blue coat and yellow dress made of thrifted pants and tablecloth.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Grey and white jacket made out of thrifted pants. Lined with light pink polyester.
+            Blue coat and yellow dress made of thrifted pants and tablecloth.
+        </p>
 
-        <div className={'sewing-carousel'}>
+        {/*--------------*/}
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s28} />
+                </div>
+                <div>
+                    <img src={s29} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s28} />
+                </div>
+                <div>
+                    <img src={s29} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s28} />
@@ -93,8 +176,48 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block quilt'}>
+            Shirt and skirt set made to match hot pink jewelry. Made from cotton. Shirt ties in the front or back,
+            skirt zips up the side.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Shirt and skirt set made to match hot pink jewelry. Made from cotton. Shirt ties in the front or back,
+            skirt zips up the side.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Shirt and skirt set made to match hot pink jewelry. Made from cotton. Shirt ties in the front or back,
+            skirt zips up the side.
+        </p>
 
-        <div className={'sewing-carousel'}>
+        {/*--------------*/}
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s37} />
+                </div>
+                <div>
+                    <img src={s38} />
+                </div>
+                <div>
+                    <img src={s39} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s37} />
+                </div>
+                <div>
+                    <img src={s38} />
+                </div>
+                <div>
+                    <img src={s39} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s37} />
@@ -108,9 +231,54 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-        <img className={'sewing-image'} src={s36}/>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block quilt-text'}>
+            2000+ piece quilt made from thrifted button down shirts. Backed with thrifted white cotton sheet.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            2000+ piece quilt made from thrifted button down shirts. Backed with thrifted white cotton sheet.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            2000+ piece quilt made from thrifted button down shirts. Backed with thrifted white cotton sheet.
+        </p>
 
-        <div className={'sewing-carousel'}>
+        {/*--------------*/}
+
+        <img className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'} src={s36}/>
+        <img className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'} src={s36}/>
+        <img className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'} src={s36}/>
+
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block make-mend'}>
+            Dress made from vintage thrifted fabric.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none make-mend-md'}>
+            Dress made from vintage thrifted fabric.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none make-mend-md'}>
+            Dress made from vintage thrifted fabric.
+        </p>
+
+        {/*--------------*/}
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s24} />
+                </div>
+                <div>
+                    <img src={s25} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s24} />
+                </div>
+                <div>
+                    <img src={s25} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s24} />
@@ -121,7 +289,39 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-        <div className={'sewing-carousel'}>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block daph-quilt'}>
+            Modern style quilt backed with white and blue polka dot sheet.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Modern style quilt backed with white and blue polka dot sheet.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Modern style quilt backed with white and blue polka dot sheet.
+        </p>
+
+        {/*--------------*/}
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s26} />
+                </div>
+                <div>
+                    <img src={s27} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s26} />
+                </div>
+                <div>
+                    <img src={s27} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s26} />
@@ -132,7 +332,57 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-        <div className={'sewing-carousel'}>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Black Lives Matter quilts. Auctioned off to raise $700+ for charity.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Black Lives Matter quilts. Auctioned off to raise $700+ for charity.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Black Lives Matter quilts. Auctioned off to raise $700+ for charity.
+        </p>
+
+        {/*--------------*/}
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s30} />
+                </div>
+                <div>
+                    <img src={s31} />
+                </div>
+                <div>
+                    <img src={s32} />
+                </div>
+                <div>
+                    <img src={s33} />
+                </div>
+                <div>
+                    <img src={s34} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s30} />
+                </div>
+                <div>
+                    <img src={s31} />
+                </div>
+                <div>
+                    <img src={s32} />
+                </div>
+                <div>
+                    <img src={s33} />
+                </div>
+                <div>
+                    <img src={s34} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s30} />
@@ -152,8 +402,47 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Gold fringe and black corduroy button up jacket and gold fringe dress. All materials were thrifted.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Gold fringe and black corduroy button up jacket and gold fringe dress. All materials were thrifted.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Gold fringe and black corduroy button up jacket and gold fringe dress. All materials were thrifted.
+        </p>
 
-        <div className={'sewing-carousel'}>
+
+        {/*--------------*/}
+
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s45} />
+                </div>
+                <div>
+                    <img src={s46} />
+                </div>
+                <div>
+                    <img src={s47} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s45} />
+                </div>
+                <div>
+                    <img src={s46} />
+                </div>
+                <div>
+                    <img src={s47} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s45} />
@@ -167,7 +456,43 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-        <div className={'sewing-carousel'}>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Pants made from thrifted denim. Includes pockets at the knee. Pattern based on vintage jeans.
+            Shirt upcycled from thrifted dress.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Pants made from thrifted denim. Includes pockets at the knee. Pattern based on vintage jeans.
+            Shirt upcycled from thrifted dress.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Pants made from thrifted denim. Includes pockets at the knee. Pattern based on vintage jeans.
+            Shirt upcycled from thrifted dress.
+        </p>
+
+        {/*--------------*/}
+
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s40} />
+                </div>
+                <div>
+                    <img src={s41} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s40} />
+                </div>
+                <div>
+                    <img src={s41} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s40} />
@@ -178,7 +503,46 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-        <div className={'sewing-carousel'}>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Jacket made with thrifted denim. Pieced in classic star quilt block pattern.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Jacket made with thrifted denim. Pieced in classic star quilt block pattern.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Jacket made with thrifted denim. Pieced in classic star quilt block pattern.
+        </p>
+
+        {/*--------------*/}
+
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s42} />
+                </div>
+                <div>
+                    <img src={s43} />
+                </div>
+                <div>
+                    <img src={s44} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s42} />
+                </div>
+                <div>
+                    <img src={s43} />
+                </div>
+                <div>
+                    <img src={s44} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s42} />
@@ -192,8 +556,46 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            White and red pattern set made from thrifted fabric.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            White and red pattern set made from thrifted fabric.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            White and red pattern set made from thrifted fabric.
+        </p>
 
-        <div className={'sewing-carousel'}>
+        {/*--------------*/}
+
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s6} />
+                </div>
+                <div>
+                    <img src={s7} />
+                </div>
+                <div>
+                    <img src={s8} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s6} />
+                </div>
+                <div>
+                    <img src={s7} />
+                </div>
+                <div>
+                    <img src={s8} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s6} />
@@ -207,15 +609,39 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-     <div className="row justify-content-md-center mt-2">
-          <div className="text-center">
-                <div class="col caption">
-                  <p> Matching sets with top that can be styled multiple ways. </p>
-            </div>
-          </div>
-    </div>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Shirt and skirt set. Shirt can be tied multiple ways.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Shirt and skirt set. Shirt can be tied multiple ways.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Shirt and skirt set. Shirt can be tied multiple ways.
+        </p>
 
-        <div className={'sewing-carousel'}>
+        {/*--------------*/}
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s11} />
+                </div>
+                <div>
+                    <img src={s12} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s11} />
+                </div>
+                <div>
+                    <img src={s12} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s11} />
@@ -226,15 +652,40 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-       <div className="row justify-content-md-center mt-2">
-            <div className="text-center">
-                  <div class="col caption">
-                    <p> Jacket made out of old jeans. </p>
-              </div>
-            </div>
-      </div>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Jacket made out of old ripped jeans.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Jacket made out of old ripped jeans.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Jacket made out of old ripped jeans.
+        </p>
 
-        <div className={'sewing-carousel'}>
+        {/*--------------*/}
+
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s13} />
+                </div>
+                <div>
+                    <img src={s14} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s13} />
+                </div>
+                <div>
+                    <img src={s14} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s13} />
@@ -245,15 +696,41 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-       <div className="row justify-content-md-center mt-2">
-            <div className="text-center">
-                  <div class="col caption">
-                    <p> Dress made from red flannel. </p>
-              </div>
-            </div>
-      </div>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Renaissance style dress made from red flannel.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Renaissance style dress made from red flannel.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Renaissance style dress made from red flannel.
+        </p>
 
-        <div className={'sewing-carousel'}>
+
+        {/*--------------*/}
+
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s15} />
+                </div>
+                <div>
+                    <img src={s16} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s15} />
+                </div>
+                <div>
+                    <img src={s16} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s15} />
@@ -264,15 +741,40 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-         <div className="row justify-content-md-center mt-2">
-              <div className="text-center">
-                    <div class="col caption">
-                      <p> Dress made from hand painted fabric inspired by Jean Dubuffet. </p>
-                </div>
-              </div>
-        </div>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Dress made with fabric I painted in the style of Jean Dubuffet.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Dress made with fabric I painted in the style of Jean Dubuffet.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Dress made with fabric I painted in the style of Jean Dubuffet.
+        </p>
 
-        <div className={'sewing-carousel'}>
+        {/*--------------*/}
+
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s17} />
+                </div>
+                <div>
+                    <img src={s18} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s17} />
+                </div>
+                <div>
+                    <img src={s18} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s17} />
@@ -283,15 +785,40 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-         <div className="row justify-content-md-center mt-2">
-              <div className="text-center">
-                    <div class="col caption">
-                      <p> Dress made from red cotton with gold polka dots. </p>
-                </div>
-              </div>
-        </div>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Red cotton with gold polka dots dress made for a holiday dance.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Red cotton with gold polka dots dress made for a holiday dance.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Red cotton with gold polka dots dress made for a holiday dance.
+        </p>
 
-        <div className={'sewing-carousel'}>
+        {/*--------------*/}
+
+
+        <div className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s19} />
+                </div>
+                <div>
+                    <img src={s20} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'}>
+            <Carousel renderThumbs={() => []}>
+                <div>
+                    <img src={s19} />
+                </div>
+                <div>
+                    <img src={s20} />
+                </div>
+            </Carousel>
+        </div>
+        <div className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'}>
             <Carousel renderThumbs={() => []}>
                 <div>
                     <img src={s19} />
@@ -302,19 +829,67 @@ class Sewing extends React.Component {
             </Carousel>
         </div>
 
-         <div className="row justify-content-md-center mt-2">
-              <div className="text-center">
-                    <div class="col caption">
-                      <p> Dress made from blue velvet. </p>
-                </div>
-              </div>
-        </div>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Blue velvet dress made for a holiday dance.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
+            Blue velvet dress made for a holiday dance.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            Blue velvet dress made for a holiday dance.
+        </p>
 
-        <img className={'sewing-image'} src={s9}/>
-        <img className={'sewing-image'} src={s10}/>
-        <img className={'sewing-image'} src={s21}/>
-        {/*<img className={'sewing-image'} src={s23}/>*/}
-   </div>
+        {/*--------------*/}
+
+
+        <img className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'} src={s9}/>
+        <img className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'} src={s9}/>
+        <img className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'} src={s9}/>
+
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Black and white patterned dress made from vintage sewing pattern.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none sewing-image-text'}>
+            Black and white patterned dress made from vintage sewing pattern.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none sewing-image-text'}>
+            Black and white patterned dress made from vintage sewing pattern.
+        </p>
+
+        {/*--------------*/}
+
+
+        <img className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'} src={s10}/>
+        <img className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'} src={s10}/>
+        <img className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'} src={s10}/>
+
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Dress made with fabric I printed with homemade cactus stamp.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none sewing-image-text'}>
+            Dress made with fabric I printed with homemade cactus stamp.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none sewing-image-text'}>
+            Dress made with fabric I printed with homemade cactus stamp.
+        </p>
+
+        {/*--------------*/}
+
+
+        <img className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'} src={s21}/>
+        <img className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'} src={s21}/>
+        <img className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'} src={s21}/>
+
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Flannel varsity jacket with personalized G.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none sewing-image-text'}>
+            Flannel varsity jacket with personalized G.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none sewing-image-text'}>
+            Flannel varsity jacket with personalized G.
+        </p>
+    </div>
    )
  }
 }
