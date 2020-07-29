@@ -22,7 +22,7 @@ import s18 from './images/Sewing/dress8.jpg';
 import s19 from './images/Sewing/dress9.jpg';
 import s20 from './images/Sewing/dress10.jpg';
 import s21 from './images/Sewing/jacket1.jpg';
-// import s23 from './images/Sewing/prom.jpg';
+import s22 from './images/Sewing/prom.png';
 import s24 from './images/Sewing/2quilt1.png';
 import s25 from './images/Sewing/2quilt2.png';
 import s26 from './images/Sewing/3quilt.png';
@@ -34,7 +34,7 @@ import s31 from './images/Sewing/goldfringe2.png';
 import s32 from './images/Sewing/goldfringe3.png';
 import s33 from './images/Sewing/goldfringe4.png';
 import s34 from './images/Sewing/goldfringe5.png';
-import s35 from './images/Sewing/jumpsuit.jpg';
+import s35 from './images/Sewing/jumpsuit.png';
 import s36 from './images/Sewing/make&mend.JPG';
 import s37 from './images/Sewing/quilt1.png';
 import s38 from './images/Sewing/quilt2.png';
@@ -841,6 +841,22 @@ class Sewing extends React.Component {
 
         {/*--------------*/}
 
+
+        <img className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'} src={s22}/>
+        <img className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'} src={s22}/>
+        <img className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'} src={s22}/>
+
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+            Dress, coat, shirt, and bowtie made for prom.
+        </p>
+        <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none sewing-image-text'}>
+            Dress, coat, shirt, and bowtie made for prom.
+        </p>
+        <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none sewing-image-text'}>
+            Dress, coat, shirt, and bowtie made for prom.
+        </p>
+
+        {/*--------------*/}
 
         <img className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'} src={s9}/>
         <img className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'} src={s9}/>
