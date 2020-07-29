@@ -13,18 +13,18 @@ class Header extends React.Component {
                     <h1 className={'header'}> Gwendolyn Friedman </h1>
                     <div className={'underline'}></div>
                     <div className={'sticky'}>
-                        {this.props.open === 'graphicart' && (
-                                <Link to={`/graphicart`} style={{ textDecoration: 'none' }}>
+                        {this.props.open === 'posters' && (
+                                <Link to={`/posters`} style={{ textDecoration: 'none' }}>
                                     <div className={'hover-button--on block-expand red'}>Posters</div>
                                 </Link>
                         )}
-                        {this.props.open !== 'graphicart' && (
+                        {this.props.open !== 'posters' && (
                         <div className='hover-button'>
                             <div>
                                 <div className={'hover-button--off block red'}></div>
                             </div>
                             <div>
-                                <Link to={`/graphicart`} style={{ textDecoration: 'none' }}>
+                                <Link to={`/posters`} style={{ textDecoration: 'none' }}>
                                     <div className={'hover-button--on block-expand red'}>Posters</div>
                                 </Link>
                             </div>

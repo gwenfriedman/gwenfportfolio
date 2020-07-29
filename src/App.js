@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Drawings from './components/Drawings.js'
-import GraphicArt from './components/GraphicArt.js'
+import Posters from './components/Posters.js'
 import Home from './components/Home.js'
 import MobileMenu from './components/MobileMenu.js'
 import WebDesign from './components/WebDesign.js'
@@ -18,14 +18,16 @@ function App() {
   return (
   	<Router>
 	    <div>
-	        <Route exact path='/'
-        	 component={Home}/>
+	        {/*<Route exact path='/'*/}
+        	{/* component={Home}/>*/}
+            <Route exact path='/'
+                   component={Posters}/>
 
             <Route exact path='/mobilemenu/:page'
               component={MobileMenu}/>
 
-            <Route exact path='/graphicart'
-             component={GraphicArt}/>
+            <Route exact path='/posters'
+             component={Posters}/>
 
              <Route exact path='/drawings'
               component={Drawings}/>

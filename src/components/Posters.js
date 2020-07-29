@@ -149,7 +149,7 @@ const IMAGES =
         }
     ];
 
-class GraphicArt extends React.Component {
+class Posters extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -171,7 +171,7 @@ class GraphicArt extends React.Component {
      const {viewerIsOpen, currentImage} = this.state;
      return(
     <div>
-        <Home open={'graphicart'}/>
+        <Home open={'posters'}/>
         <div className={'gallery-computer d-none d-sm-none d-md-block'}>
             <Gallery photos={IMAGES} direction={"column"} onClick={(e, {photo, index})=> this.openLightbox(e, {photo, index})}/>
         </div>
@@ -197,4 +197,4 @@ class GraphicArt extends React.Component {
     </div>
  )}
 }
-export default GraphicArt;
+export default Posters;
