@@ -3,13 +3,13 @@ import Home from './Home.js'
 import e1 from './images/Embroidery/19.png';
 import e2 from './images/Embroidery/10.png';
 import e3 from './images/Embroidery/shirt1.png';
-import e4 from './images/Embroidery/shirt2.jpg';
-import e5 from './images/Embroidery/7.jpg';
-import e6 from './images/Embroidery/12.jpg';
-import e7 from './images/Embroidery/skirt1.jpg';
-import e8 from './images/Embroidery/necklace1.jpg';
-import e9 from './images/Embroidery/necklace2.jpg';
-import e10 from './images/Embroidery/18.jpg';
+import e4 from './images/Embroidery/shirt2.png';
+import e5 from './images/Embroidery/7.png';
+import e6 from './images/Embroidery/12.png';
+import e7 from './images/Embroidery/skirt1.png';
+import e8 from './images/Embroidery/necklace1.png';
+import e9 from './images/Embroidery/necklace2.png';
+import e10 from './images/Embroidery/18.png';
 import {Carousel} from "react-responsive-carousel";
 
 
