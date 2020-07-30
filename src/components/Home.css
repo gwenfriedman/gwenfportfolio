@@ -94,13 +94,13 @@
     margin-left: 30px;
     margin-top: 25px;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .underline-mobile {
     margin-left: 30px;
     height: 2px;
-    width: 230px;
+    width: 205px;
     background-color: #FFD40C;
     margin-top: -5px;
 }
@@ -329,4 +329,8 @@ div.sticky {
 .dubuffet {
     margin-top: -250px;
     margin-bottom: 230px;
+}
+
+.prom {
+    margin-bottom: 400px;
 }

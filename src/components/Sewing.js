@@ -846,7 +846,7 @@ class Sewing extends React.Component {
         <img className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'} src={s22}/>
         <img className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'} src={s22}/>
 
-        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block jumpsuit'}>
+        <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block prom'}>
             Dress, coat, shirt, and bowtie made for prom.
         </p>
         <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none sewing-image-text'}>

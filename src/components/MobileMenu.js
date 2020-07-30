@@ -10,7 +10,7 @@ class MobileMenu extends React.Component {
                 <Link to={`/${this.props.match.params.page}`}>
                     <div className={'close-btn'}>X</div>
                 </Link>
-                <Link to={`/graphicart`} style={{ textDecoration: 'none' }}>
+                <Link to={`/posters`} style={{ textDecoration: 'none' }}>
                     <div className={'block-expand red menu-mobile-center'}>Posters</div>
                 </Link>
 
