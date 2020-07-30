@@ -34,6 +34,10 @@ class MobileMenu extends React.Component {
                     <div className={'block-expand dark-blue menu-mobile-center'}>Embroidery</div>
                 </Link>
 
+                <Link to={`/misc`} style={{ textDecoration: 'none' }}>
+                    <div className={'block-expand purple menu-mobile-center'}>Misc.</div>
+                </Link>
+
                 <Link to={`/about`} style={{ textDecoration: 'none' }}>
                     <div className={'block-expand black menu-mobile-center'}>About</div>
                 </Link>

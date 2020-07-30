@@ -8,6 +8,7 @@ import About from './components/About.js'
 import Branding from './components/Branding.js'
 import Embroidery from './components/Embroidery.js'
 import Sewing from './components/Sewing.js'
+import Misc from './components/Misc.js'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import {BrowserRouter as Router, Route} from "react-router-dom";
@@ -43,6 +44,9 @@ function App() {
 
              <Route exact path='/sewing'
                component={Sewing}/>
+
+            <Route exact path='/misc'
+                   component={Misc}/>
         </div>
     </Router>
   )

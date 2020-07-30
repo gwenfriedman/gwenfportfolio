@@ -20,7 +20,11 @@
 }
 
 .dark-blue {
-    background-color: #0B4E80;
+    background-color: #1A5E91;
+}
+
+.purple {
+    background-color: #5D0B72;
 }
 
 .black {
@@ -258,7 +262,7 @@ div.sticky {
     position: fixed;
     top: 0;
     margin-left: 78%;
-    margin-top: 110px;
+    margin-top: 60px;
 }
 
 .carousel-text {
@@ -333,4 +337,24 @@ div.sticky {
 
 .prom {
     margin-bottom: 400px;
+}
+
+.misc-text {
+    margin-right: 400px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-top: -40px;
+}
+
+.dragon-carousel {
+    margin-bottom: 250px;
+}
+
+.dragon-text {
+    margin-top: -500px !important;
+    margin-bottom: 300px;
+}
+
+.octopus {
+    margin-top: -200px !important;
 }

@@ -123,6 +123,25 @@ class Header extends React.Component {
                         </div>
                         )}
 
+
+                        {this.props.open === 'misc' && (
+                            <Link to={`/misc`} style={{ textDecoration: 'none' }}>
+                                <div className={'hover-button--on block-expand purple'}>Misc.</div>
+                            </Link>
+                        )}
+                        {this.props.open !== 'misc' && (
+                            <div className='hover-button'>
+                                <div>
+                                    <div className={'hover-button--off block purple'}></div>
+                                </div>
+                                <div>
+                                    <Link to={`/misc`} style={{ textDecoration: 'none' }}>
+                                        <div className={'hover-button--on block-expand purple'}>Misc.</div>
+                                    </Link>
+                                </div>
+                            </div>
+                        )}
+
                         {this.props.open === 'about' && (
                             <Link to={`/about`} style={{ textDecoration: 'none' }}>
                                 <div className={'hover-button--on block-expand black'}>About</div>
