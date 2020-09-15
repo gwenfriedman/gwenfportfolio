@@ -1,3 +1,5 @@
+See the live site here: [http://gwenfriedman.com](http://gwenfriedman.com)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
