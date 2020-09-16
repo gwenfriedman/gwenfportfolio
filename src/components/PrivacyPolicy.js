@@ -11,7 +11,7 @@ class PrivacyPolicy extends React.Component {
 
             <h4 className={'txt'}>We don't store any of your data. </h4>
 
-            <img src={kal} className={'kal'}/>
+            <img src={kal} className={'kal d-none d-sm-none d-md-block'}/>
         </div>
     )
     }
