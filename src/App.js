@@ -12,7 +12,7 @@ import Misc from './components/Misc.js'
 import PrivacyPolicy from './components/PrivacyPolicy'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 
 function App() {
 
