@@ -18,40 +18,38 @@ function App() {
 
   return (
   	<Router>
-	    <Switch>
-            <Route exact path='/'
-                   component={Posters}/>
+        <Route exact path='/'
+               component={Posters}/>
 
-            <Route exact path='/mobilemenu/:page'
-              component={MobileMenu}/>
+        <Route exact path='/mobilemenu/:page'
+          component={MobileMenu}/>
 
-            <Route exact path='/posters'
-             component={Posters}/>
+        <Route exact path='/posters'
+         component={Posters}/>
 
-             <Route exact path='/drawings'
-              component={Drawings}/>
+         <Route exact path='/drawings'
+          component={Drawings}/>
 
-             <Route exact path='/webdesign'
-              component={WebDesign}/>
+         <Route exact path='/webdesign'
+          component={WebDesign}/>
 
-              <Route exact path='/about'
-               component={About}/>
+          <Route exact path='/about'
+           component={About}/>
 
-               <Route exact path='/branding'
-                component={Branding}/>
+           <Route exact path='/branding'
+            component={Branding}/>
 
-               <Route exact path='/embroidery'
-                component={Embroidery}/>
+           <Route exact path='/embroidery'
+            component={Embroidery}/>
 
-             <Route exact path='/sewing'
-               component={Sewing}/>
+         <Route exact path='/sewing'
+           component={Sewing}/>
 
-            <Route exact path='/misc'
-                   component={Misc}/>
+        <Route exact path='/misc'
+               component={Misc}/>
 
-            <Route exact path='/privacypolicy'
-                   component={PrivacyPolicy}/>
-        </Switch>
+        <Route exact path='/privacypolicy'
+               component={PrivacyPolicy}/>
     </Router>
   )
 }
