@@ -9,7 +9,12 @@ class PrivacyPolicy extends React.Component {
                 <h1 className={'p-title'}>Howlerr Privacy Policy</h1>
             </div>
 
-            <h5 className={'txt'}>
+            <h5 className={'txt d-none d-sm-none d-md-block'}>
+                We don't store any of your data.
+                Camera, microphone, and camera roll access will be requested in order to take a video of your dog and save it your device.
+            </h5>
+
+            <h5 className={'txt2 d-block d-md-none d-lg-none'}>
                 We don't store any of your data.
                 Camera, microphone, and camera roll access will be requested in order to take a video of your dog and save it your device.
             </h5>
