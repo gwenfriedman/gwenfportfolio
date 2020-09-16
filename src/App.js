@@ -18,9 +18,6 @@ function App() {
 
   return (
   	<Router>
-        <Route exact path='/'
-               component={Posters}/>
-
         <Route exact path='/mobilemenu/:page'
           component={MobileMenu}/>
 
@@ -50,6 +47,9 @@ function App() {
 
         <Route exact path='/privacypolicy'
                component={PrivacyPolicy}/>
+
+        <Route exact path='/'
+               component={Posters}/>
     </Router>
   )
 }
