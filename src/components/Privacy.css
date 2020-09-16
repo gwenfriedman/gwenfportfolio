@@ -3,7 +3,7 @@
 .p-header {
     background: #FB5807;
     font-size: 30px;
-    height: 120px;
+    height: 80px;
     color: white;
 }
 
@@ -32,4 +32,26 @@
 
 .kal2 {
     width: 90%;
+}
+
+.images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 667px;
+    width: 375px;
+    margin-top: 20px;
+    outline-color: black;
+    outline-width: 1px;
+    outline-style: solid;
+}
+
+.support-text {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.step {
+    margin-top: 50px;
 }

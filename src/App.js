@@ -10,6 +10,7 @@ import Embroidery from './components/Embroidery.js'
 import Sewing from './components/Sewing.js'
 import Misc from './components/Misc.js'
 import PrivacyPolicy from './components/PrivacyPolicy'
+import AppSupport from './components/AppSupport'
 
 import '../node_modules/bootstrap/dist/css/bootstrap.css';
 import {BrowserRouter as Router, Route} from "react-router-dom";
@@ -47,6 +48,9 @@ function App() {
 
         <Route exact path='/privacypolicy'
                component={PrivacyPolicy}/>
+
+        <Route exact path='/appsupport'
+               component={AppSupport}/>
 
         <Route exact path='/'
                component={Posters}/>
