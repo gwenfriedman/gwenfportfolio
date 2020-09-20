@@ -119,7 +119,7 @@
 .gallery-computer {
     margin-top: 35px !important;
     margin-left: 100px;
-    margin-right: 400px;
+    width: 60%;
 }
 
 .ReactGridGallery {

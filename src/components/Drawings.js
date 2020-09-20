@@ -287,7 +287,7 @@ class Drawings extends React.Component {
              <Gallery photos={IMAGES} direction={"column"} onClick={(e, {photo, index})=> this.openLightbox(e, {photo, index})}/>
          </div>
          <div className={'d-sm-block d-md-none'}>
-             <Gallery photos={IMAGES}/>
+             <Gallery photos={IMAGES} direction={"column"} onClick={(e, {photo, index})=> this.openLightbox(e, {photo, index})}/>
          </div>
 
          <ModalGateway>

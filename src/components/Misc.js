@@ -9,12 +9,28 @@ import m5 from './images/misc/dragon2.png';
 import m6 from './images/misc/dragon1.png';
 import m7 from './images/misc/octopus.png';
 
+
 class Mics extends React.Component {
     render() { return(
         <div>
             <Home open={'misc'}/>
             <div className={'sewing-carousel-md sewing-top d-none d-sm-none d-md-block d-lg-block'}>
-                <Carousel renderThumbs={() => []}>
+                <Carousel showArrows={true} renderThumbs={() => []}
+                      // renderArrowPrev={(onClickHandler, hasPrev, label) =>
+                      //     hasPrev && (
+                      //         <a onClick={onClickHandler} title={label} className={'arrow-styles'}>
+                      //             {"<"}
+                      //         </a>
+                      //     )
+                      // }
+                      // renderArrowNext={(onClickHandler, hasNext, label) =>
+                      //     hasNext && (
+                      //         <a type="button" onClick={onClickHandler} title={label} className={'arrow-styles'}>
+                      //             >
+                      //         </a>
+                      //     )
+                      // }
+                >
                     <div>
                         <img src={m1} />
                     </div>
