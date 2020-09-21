@@ -55,3 +55,8 @@
 .step {
     margin-top: 50px;
 }
+
+
+.p-header-long {
+    height: 120px !important;
+}

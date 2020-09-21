@@ -5,7 +5,7 @@ import kal from './images/kal.png'
 class PrivacyPolicy extends React.Component {
     render() { return(
         <div>
-            <div className={'p-header'}>
+            <div className={'p-header-long p-header'}>
                 <h1 className={'p-title'}>Howlerr Privacy Policy</h1>
             </div>
 
