@@ -18,44 +18,37 @@ const IMAGES =
         {
             src: img0,
             width: 750,
-            height: 1334,
-            caption: "Howlerr - Loading Screen"
+            height: 1334
         },
         {
             src: img1,
             width: 750,
-            height: 1334,
-            caption: "Self portrait - drawn with Procreate"
+            height: 1334
         },
         {
             src: img2,
             width: 750,
-            height: 1334,
-            caption: "Self portrait - drawn with Procreate"
+            height: 1334
         },
         {
             src: img3,
             width: 750,
-            height: 1334,
-            caption: "Self portrait - drawn with Procreate"
+            height: 1334
         },
         {
             src: img4,
             width: 750,
-            height: 1334,
-            caption: "Self portrait - drawn with Procreate"
+            height: 1334
         },
         {
             src: img5,
             width: 750,
-            height: 1334,
-            caption: "Self portrait - drawn with Procreate"
+            height: 1334
         },
         {
             src: img6,
             width: 750,
-            height: 1334,
-            caption: "Self portrait - drawn with Procreate"
+            height: 1334
         },
         ];
 
