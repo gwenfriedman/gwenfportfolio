@@ -14,39 +14,8 @@ class Mics extends React.Component {
     render() { return(
         <div>
             <Home open={'misc'}/>
-            <div className={'sewing-carousel-md sewing-top d-none d-sm-none d-md-block d-lg-block'}>
-                <Carousel showArrows={true} renderThumbs={() => []}
-                      // renderArrowPrev={(onClickHandler, hasPrev, label) =>
-                      //     hasPrev && (
-                      //         <a onClick={onClickHandler} title={label} className={'arrow-styles'}>
-                      //             {"<"}
-                      //         </a>
-                      //     )
-                      // }
-                      // renderArrowNext={(onClickHandler, hasNext, label) =>
-                      //     hasNext && (
-                      //         <a type="button" onClick={onClickHandler} title={label} className={'arrow-styles'}>
-                      //             >
-                      //         </a>
-                      //     )
-                      // }
-                >
-                    <div>
-                        <img src={m1} />
-                    </div>
-                    <div>
-                        <img src={m2} />
-                    </div>
-                    <div>
-                        <img src={m3} />
-                    </div>
-                    <div>
-                        <img src={m4} />
-                    </div>
-                </Carousel>
-            </div>
-            <div className={'sewing-carousel-sm sewing-top d-sm-block d-md-none d-lg-none'}>
-                <Carousel renderThumbs={() => []}>
+            <div className={'sewing-carousel-md sewing-top'}>
+                <Carousel showArrows={true} renderThumbs={() => []}>
                     <div>
                         <img src={m1} />
                     </div>
@@ -62,35 +31,11 @@ class Mics extends React.Component {
                 </Carousel>
             </div>
 
-            <p className={'misc-text d-none d-sm-none d-md-block d-lg-block'}>
-                Cookbook filled with recipes for family favorites. Egg illustration made with Illustrator, book made with InDesign.
-            </p>
-            <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+            <p className={'carousel-text ff-text'}>
                 Cookbook filled with recipes for family favorites. Egg illustration made with Illustrator, book made with InDesign.
             </p>
 
-
-            <div className={'sewing-carousel sewing-top d-none d-sm-none d-md-none d-lg-block hatsassy dragon-carousel'}>
-                <Carousel renderThumbs={() => []}>
-                    <div>
-                        <img src={m6} />
-                    </div>
-                    <div>
-                        <img src={m5} />
-                    </div>
-                </Carousel>
-            </div>
-            <div className={'sewing-carousel-md sewing-top d-none d-sm-none d-md-block d-lg-none'}>
-                <Carousel renderThumbs={() => []}>
-                    <div>
-                        <img src={m6} />
-                    </div>
-                    <div>
-                        <img src={m5} />
-                    </div>
-                </Carousel>
-            </div>
-            <div className={'sewing-carousel-sm sewing-top d-sm-block d-md-none d-lg-none'}>
+            <div className={'sewing-carousel'}>
                 <Carousel renderThumbs={() => []}>
                     <div>
                         <img src={m6} />
@@ -101,27 +46,14 @@ class Mics extends React.Component {
                 </Carousel>
             </div>
 
-            <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block dragon-text'}>
-                Lost wax casting sculpture of a dragon.
-            </p>
-            <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none'}>
-                Lost wax casting sculpture of a dragon.
-            </p>
-            <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none'}>
+
+            <p className={'carousel-text ff-text'}>
                 Lost wax casting sculpture of a dragon.
             </p>
 
-            <img className={'sewing-carousel d-none d-sm-none d-md-none d-lg-block'} src={m7}/>
-            <img className={'sewing-carousel-md d-none d-sm-none d-md-block d-lg-none'} src={m7}/>
-            <img className={'sewing-carousel-sm d-sm-block d-md-none d-lg-none'} src={m7}/>
+            <img className={'sewing-carousel'} src={m7}/>
 
-            <p className={'carousel-text d-none d-sm-none d-md-none d-lg-block octopus'}>
-                Wax sculpture of an octopus.
-            </p>
-            <p className={'carousel-text-md d-none d-sm-none d-md-block d-lg-none sewing-image-text'}>
-                Wax sculpture of an octopus.
-            </p>
-            <p className={'carousel-text-sm d-sm-block d-md-none d-lg-none sewing-image-text'}>
+            <p className={'carousel-text ff-text'}>
                 Wax sculpture of an octopus.
             </p>
 

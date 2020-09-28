@@ -17,6 +17,7 @@
 
 .light-blue {
     background-color: #2BAAC0;
+    line-height: 32.5px!important;
 }
 
 .dark-blue {
@@ -116,39 +117,271 @@
     background-color: #FFD40C;
 }
 
-.gallery-computer {
-    margin-top: 35px !important;
-    margin-left: 100px;
-    width: 60%;
+@media only screen and (min-width: 0px) {
+    [class*="gallery-computer"] {
+        width: 100%;
+    }
+
+    [class*="invisionLink"] {
+        color: #F92B00;
+        margin-left: 40px;
+    }
+
+    [class*="webDesign"] {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+
+    [class*="sewing-carousel"] {
+        width: 100%;
+    }
+
+    [class*="carousel-text"] {
+        margin: -150px 20px 100px 20px
+    }
+
+    [class*="peacock-text"] {
+        margin-top: -50px !important;
+    }
+
+    [class*="jumpsuit"] {
+        margin: 20px 20px 50px 20px !important;
+    }
+
+    [class*="quilt"] {
+        margin-bottom: 100px !important;
+        margin-top: -30px !important;
+    }
+
+    [class*="make-mend"] {
+        margin-top: 8px !important;
+    }
+
+    [class*="daph-quilt"] {
+        margin: -150px 20px 100px 20px
+    }
+
+    [class*="prom"] {
+        margin-bottom: 100px !important;
+        margin-top:8px !important
+    }
+
+    [class*="app-name"] {
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    [class*="app-description"] {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    [class*="web-images"] {
+        padding-left: 0px;
+    }
+
+    [class*="dragon"] {
+        margin-top: -30px !important;
+        margin-bottom: 50px !important;
+    }
+
+    [class*="dubuffet"] {
+        margin-top: -30px !important;
+        margin-bottom: 50px !important;
+    }
+
+    [class*="ff-text"] {
+        margin-top:-20px !important;
+        margin-bottom: 50px !important;
+    }
+
+    [class*="about-image"] {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    [class*="bio"] {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Medium Devices */
+@media only screen and (min-width : 769px) {
+    [class*="sewing-carousel"] {
+        width: 60%;
+        margin-left:100px;
+    }
+
+    [class*="bio"] {
+        margin-top: -320px;
+        margin-left: 350px;
+        margin-right: 30%;
+    }
+
+    [class*="invisionLink"] {
+        color: #F92B00;
+        margin-left: 100px;
+    }
+
+    [class*="webDesign"] {
+        width: 60%;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+
+    [class*="gallery-computer"] {
+        margin-top: 35px !important;
+        margin-left: 100px;
+        width: 60%;
+    }
+
+    [class*="carousel-text"] {
+        margin: -170px 25% 75px 100px
+    }
+
+    [class*="dragon"] {
+        margin-top: -40px !important;
+        margin-bottom: 50px !important;
+    }
+
+    [class*="dubuffet"] {
+        margin-top: -40px !important;
+        margin-bottom: 50px !important;
+    }
+
+    [class*="peacock-text"] {
+        margin-top: -50px !important;
+    }
+
+    [class*="jumpsuit"] {
+        margin: 10px 25% 75px 100px !important;
+    }
+
+    [class*="quilt"] {
+        margin-bottom: 75px !important;
+    }
+
+    [class*="prom"] {
+        margin-bottom: 75px !important;
+        margin-top:8px !important
+    }
+
+    [class*="app-name"] {
+        margin-top: 30px;
+        margin-left: 100px;
+    }
+
+    [class*="app-description"] {
+        margin-left: 100px;
+        width: 60%;
+    }
+
+    [class*="web-images"] {
+        padding-left: 80px;
+    }
+
+    [class*="ff-text"] {
+        margin-top:-30px !important;
+        margin-bottom: 50px !important;
+    }
+
+    [class*="about-image"] {
+        width: 200px;
+        margin-top: 35px;
+        margin-left: 100px;
+    }
+}
+
+/* large Devices, Desktops */
+@media only screen and (min-width : 1051px) {
+    [class*="gallery-computer"] {
+        margin-top: 35px !important;
+        margin-left: 100px;
+        width: 60%;
+    }
+    [class*="sewing-carousel"] {
+        width: 35%;
+        margin-left:100px;
+    }
+
+    [class*="carousel-text"] {
+        margin: -375px 25% 100px 45%
+    }
+
+    [class*="peacock-text"] {
+        margin-top: -350px !important;
+    }
+
+    [class*="jumpsuit"] {
+        margin: -375px 25% 350px 45% !important;
+    }
+
+    [class*="quilt"] {
+        margin-bottom: 350px !important;
+        margin-top: -375px !important;
+    }
+
+    [class*="quilt-text"] {
+        margin-bottom: 250px !important;
+        margin-top: -250px !important;
+    }
+
+    [class*="make-mend"] {
+        margin-bottom: 400px !important;
+        margin-top: -375px !important;
+    }
+
+    [class*="daph-quilt"] {
+        margin-bottom: 350px;
+        margin-top:-230px !important;
+        margin-bottom: 200px !important;
+    }
+
+    [class*="prom"] {
+        margin-bottom: 400px !important;
+        margin-top: -375px !important;
+    }
+
+    [class*="dragon"] {
+        margin-top: -320px !important;
+        margin-bottom: 300px !important;
+    }
+
+    [class*="dubuffet"] {
+        margin-top: -250px !important;
+        margin-bottom: 230px !important;
+    }
+
+    [class*="ff-text"] {
+        margin-top:-250px !important;
+        margin-bottom: 200px !important;
+    }
+
+    [class*="about-image"] {
+        width: 300px;
+        margin-top: 35px;
+        margin-left: 100px;
+    }
+
+    [class*="bio"] {
+        margin-top: -475px;
+        margin-left: 450px;
+        margin-right: 30%;
+    }
+}
+
+.p2 {
+    margin-top: 20px !important;
 }
 
 .ReactGridGallery {
     margin-left: 100px;
     margin-right: 400px;
-}
-
-.about-image {
-    width: 300px;
-    margin-top: 35px;
-    margin-left: 100px;
-}
-
-.bio {
-    margin-top: -475px;
-    margin-left: 450px;
-    margin-right: 30%;
-}
-
-.about-image-tablet {
-    width: 200px;
-    margin-top: 35px;
-    margin-left: 100px;
-}
-
-.bio-tablet {
-    margin-top: -320px;
-    margin-left: 350px;
-    margin-right: 30%;
 }
 
 .resume {
@@ -157,23 +390,9 @@
     margin-bottom: 25px;
 }
 
-.about-image-phone {
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-.bio-phone {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-}
 
 a {
     display: block;
-}
-
-.web-images {
-    padding-left: 80px;
 }
 
 .home-img {
@@ -195,46 +414,6 @@ a {
     border: 1px solid black;
     margin-left: 30px;
     margin-top: 35px;
-}
-
-.webDesign {
-    width: 60%;
-    margin-left: 100px;
-    margin-top: 20px;
-}
-
-.webDesign-sm {
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 20px;
-}
-
-.p2 {
-    margin-top: 20px !important;
-}
-
-.invisionLink {
-    color: #F92B00;
-    margin-left: 100px;
-}
-
-.invisionLink-sm {
-    color: #F92B00;
-    margin-left: 40px;
-}
-
-.sewing-carousel {
-    width: 35%;
-    margin-left: 100px;
-}
-
-.sewing-carousel-md {
-    width: 60%;
-    margin-left: 100px;
-}
-
-.sewing-carousel-sm {
-    width: 100%;
 }
 
 .sewing-top {
@@ -265,96 +444,52 @@ div.sticky {
     margin-top: 60px;
 }
 
-.carousel-text {
-    margin-top: -375px;
-    margin-left: 45%;
-    margin-bottom: 150px;
-    margin-right: 25%;
-}
-
-.carousel-text-md {
-    margin-top: -50px;
-    margin-left: 100px;
-    margin-bottom: 100px;
-    margin-right: 245px;
-}
-
-.carousel-text-sm {
-    margin-top: -50px;
-    margin-left: 20px;
-    margin-bottom: 100px;
-    margin-right: 20px;
-}
-
 .hatsassy {
     margin-bottom: 150px;
 }
 
-.jumpsuit {
-    margin-bottom: 350px;
-}
-.jumpsuit-2 {
-    margin-top: 20px;
-}
-
-.quilt {
-    margin-bottom: 350px;
-}
-
-.quilt-text {
-    margin-top: -250px !important;
-    margin-bottom: 200px;
-}
-
-
-.make-mend {
-    margin-bottom: 400px;
-}
-
-.daph-quilt {
-    margin-bottom: 350px;
-    margin-top:-230px !important;
-    margin-bottom: 200px !important;
-}
-
-.make-mend-md {
-    margin-top: 8px !important;
-}
-
-.sewing-image-text {
-    margin-top: 8px !important;
-}
-
-.dragon {
-    margin-top: -320px;
-    margin-bottom: 300px;
-}
-
-.dubuffet {
-    margin-top: -250px;
-    margin-bottom: 230px;
-}
-
-.prom {
-    margin-bottom: 400px;
-}
-
-.misc-text {
-    margin-right: 400px;
-    margin-left: 100px;
-    margin-bottom: 100px;
-    margin-top: -40px;
-}
+/*.misc-text {*/
+/*    margin-right: 400px;*/
+/*    margin-left: 100px;*/
+/*    margin-bottom: 100px;*/
+/*    margin-top: -40px;*/
+/*}*/
 
 .dragon-carousel {
     margin-bottom: 250px;
 }
 
-.dragon-text {
-    margin-top: -500px !important;
-    margin-bottom: 300px;
-}
+
+/*.ff {*/
+/*    margin-bottom: 250px;*/
+/*}*/
+
+/*.dragon-text {*/
+/*    margin-top: -500px !important;*/
+/*    margin-bottom: 300px;*/
+/*}*/
 
 .octopus {
     margin-top: -200px !important;
+}
+
+.new-thing {
+    margin-top: 30px;
+    margin-left: 10px;
+    color:white;
+}
+
+.app-image {
+    width: 300px;
+    margin-right: 20px;
+    outline: black 1px solid;
+}
+
+.app-gallery {
+    width: 80%;
+}
+
+.pe {
+    margin-top:60px;
+    margin-bottom:-20px;
 }

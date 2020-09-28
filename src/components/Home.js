@@ -89,7 +89,7 @@ class Header extends React.Component {
 
                     {this.props.open === 'webdesign' && (
                         <Link to={`/webdesign`} style={{ textDecoration: 'none' }}>
-                            <div className={'hover-button--on block-expand light-blue'}>Web Design</div>
+                            <div className={'hover-button--on block-expand light-blue'}>Web & App Design</div>
                         </Link>
                     )}
                     {this.props.open !== 'webdesign' && (
@@ -99,7 +99,7 @@ class Header extends React.Component {
                         </div>
                         <div>
                             <Link to={`/webdesign`} style={{ textDecoration: 'none' }}>
-                                <div className={'hover-button--on block-expand light-blue'}>Web Design</div>
+                                <div className={'hover-button--on block-expand light-blue'}>Web & App Design</div>
                             </Link>
                         </div>
                     </div>

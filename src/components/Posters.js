@@ -172,10 +172,7 @@ class Posters extends React.Component {
      return(
     <div>
         <Home open={'posters'}/>
-        <div className={'gallery-computer d-none d-sm-none d-md-block'}>
-            <Gallery photos={IMAGES} direction={"column"} onClick={(e, {photo, index})=> this.openLightbox(e, {photo, index})}/>
-        </div>
-        <div className={'d-sm-block d-md-none'}>
+        <div className={'gallery-computer'}>
             <Gallery photos={IMAGES} direction={"column"} onClick={(e, {photo, index})=> this.openLightbox(e, {photo, index})}/>
         </div>
 
