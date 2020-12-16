@@ -10,7 +10,8 @@ import e7 from './images/Embroidery/skirt1.png';
 import e8 from './images/Embroidery/necklace1.png';
 import e9 from './images/Embroidery/necklace2.png';
 import e10 from './images/Embroidery/18.png';
-import {Carousel} from "react-responsive-carousel";
+import ImgComponent from "./ImgComponent";
+
 
 
 class Embroidery extends React.Component {
@@ -19,78 +20,33 @@ class Embroidery extends React.Component {
         <Home className={'sticky'} open={'embroidery'}/>
 
 
-            <div className={'sewing-top sewing-carousel'}>
-                <Carousel renderThumbs={() => []}>
-                    <div>
-                        <img src={e1} />
-                    </div>
-                    <div>
-                        <img src={e2} />
-                    </div>
-                    <div>
-                        <img src={e3} />
-                    </div>
-                </Carousel>
-            </div>
+        <ImgComponent
+          images={[e1, e2, e3]}
+          text={
+            "Dragon embroidered on denim shirt."
+          }
+        />
 
-        <p className={'carousel-text dragon'}>
-            Dragon embroidered on denim shirt.
-        </p>
+        <ImgComponent
+          images={[e4, e5]}
+          text={
+            "Woman embroidered on white tank top."
+          }
+        />
 
-        {/*--------------*/}
+        <ImgComponent
+          images={[e6, e7]}
+          text={
+            "Jean Dubuffet inspired art embroidered on denim skirt."
+          }
+        />
 
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={e4} />
-                </div>
-                <div>
-                    <img src={e5} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text jumpsuit'}>
-            Woman embroidered on white tank top.
-        </p>
-
-        {/*--------------*/}
-
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={e6} />
-                </div>
-                <div>
-                    <img src={e7} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text dubuffet'}>
-            Jean Dubuffet inspired art embroidered on denim skirt.
-        </p>
-
-        {/*--------------*/}
-
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={e8} />
-                </div>
-                <div>
-                    <img src={e9} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text dubuffet'}>
-            Mini embroidery hoop necklaces. Laser cut, embroidered, assembled.
-        </p>
-
-        {/*--------------*/}
+        <ImgComponent
+          images={[e8, e9]}
+          text={
+            "Mini embroidery hoop necklaces. Laser cut, embroidered, assembled."
+          }
+        />
 
         <img className={'sewing-carousel'} src={e10} />
 

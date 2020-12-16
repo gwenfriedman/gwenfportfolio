@@ -47,8 +47,8 @@ import s44 from './images/Sewing/redSet3.png';
 import s45 from './images/Sewing/velvet1.png';
 import s46 from './images/Sewing/velvet2.png';
 import s47 from './images/Sewing/velvet3.png';
-import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ImgComponent from "./ImgComponent";
 
 class Sewing extends React.Component {
  render() { return(
@@ -61,70 +61,29 @@ class Sewing extends React.Component {
         </p>
 
 
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s1} />
-                </div>
-                <div>
-                    <img src={s2} />
-                </div>
-                <div>
-                    <img src={s3} />
-                </div>
-                <div>
-                    <img src={s4} />
-                </div>
-                <div>
-                    <img src={s5} />
-                </div>
-            </Carousel>
-        </div>
 
-        <p className={'carousel-text jumpsuit'}>
-            Grey and white jacket made out of thrifted pants. Lined with light pink polyester.
-            Blue coat and yellow dress made of thrifted pants and tablecloth.
-        </p>
+        <ImgComponent
+          images={[s1, s2, s3, s4, s5]}
+          text={
+            "Grey and white jacket made out of thrifted pants. Lined with light pink polyester." +
+            " Blue coat and yellow dress made of thrifted pants and tablecloth."
+          }
+        />
 
-        {/*--------------*/}
+        <ImgComponent
+          images={[s28, s29]}
+          text={
+            "Shirt and skirt set made to match hot pink jewelry. Made from cotton. Shirt ties in the front or back,"+
+            " skirt zips up the side."
+          }
+        />
 
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s28} />
-                </div>
-                <div>
-                    <img src={s29} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text quilt'}>
-            Shirt and skirt set made to match hot pink jewelry. Made from cotton. Shirt ties in the front or back,
-            skirt zips up the side.
-        </p>
-
-        {/*--------------*/}
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s37} />
-                </div>
-                <div>
-                    <img src={s38} />
-                </div>
-                <div>
-                    <img src={s39} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text quilt-text'}>
-            2000+ piece quilt made from thrifted button down shirts. Backed with thrifted white cotton sheet.
-        </p>
-
-        {/*--------------*/}
+        <ImgComponent
+          images={[s37, s38, s39]}
+          text={
+            "2000+ piece quilt made from thrifted button down shirts. Backed with thrifted white cotton sheet."
+          }
+        />
 
         <img className={'sewing-carousel'} src={s36}/>
 
@@ -132,239 +91,91 @@ class Sewing extends React.Component {
             Dress made from vintage thrifted fabric.
         </p>
 
-        {/*--------------*/}
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s24} />
-                </div>
-                <div>
-                    <img src={s25} />
-                </div>
-            </Carousel>
-        </div>
 
-        <p className={'carousel-text daph-quilt'}>
-            Modern style quilt backed with white and blue polka dot sheet.
-        </p>
+        <ImgComponent
+          images={[s24, s25]}
+          text={
+            "Modern style quilt backed with white and blue polka dot sheet."
+          }
+        />
 
-        {/*--------------*/}
+        <ImgComponent
+          images={[s26, s27]}
+          text={
+            "Black Lives Matter quilts. Auctioned off to raise $700+ for charity."
+          }
+        />
 
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s26} />
-                </div>
-                <div>
-                    <img src={s27} />
-                </div>
-            </Carousel>
-        </div>
+        <ImgComponent
+          images={[s30, s31, s32, s33, s34]}
+          text={
+            "Gold fringe and black corduroy button up jacket and gold fringe dress. All materials were thrifted."
+          }
+        />
 
-        <p className={'carousel-text jumpsuit'}>
-            Black Lives Matter quilts. Auctioned off to raise $700+ for charity.
-        </p>
+        <ImgComponent
+          images={[s45, s46, s47]}
+          text={
+            "Pants made from thrifted denim. Includes pockets at the knee. Pattern based on vintage jeans." +
+            " Shirt upcycled from thrifted dress."
+          }
+        />
 
-        {/*--------------*/}
+        <ImgComponent
+          images={[s40, s41]}
+          text={
+            "Jacket made with thrifted denim. Pieced in classic star quilt block pattern."
+          }
+        />
 
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s30} />
-                </div>
-                <div>
-                    <img src={s31} />
-                </div>
-                <div>
-                    <img src={s32} />
-                </div>
-                <div>
-                    <img src={s33} />
-                </div>
-                <div>
-                    <img src={s34} />
-                </div>
-            </Carousel>
-        </div>
+        <ImgComponent
+          images={[s42, s43, s44]}
+          text={
+            "White and red pattern set made from thrifted fabric."
+          }
+        />
 
-        <p className={'carousel-text jumpsuit'}>
-            Gold fringe and black corduroy button up jacket and gold fringe dress. All materials were thrifted.
-        </p>
+        <ImgComponent
+          images={[s6, s7, s8]}
+          text={
+            "Shirt and skirt set. Shirt can be tied multiple ways."
+          }
+        />
 
-        {/*--------------*/}
+        <ImgComponent
+          images={[s11, s12]}
+          text={
+            "Jacket made out of old ripped jeans."
+          }
+        />
 
+        <ImgComponent
+          images={[s13, s14]}
+          text={
+            "Renaissance style dress made from red flannel."
+          }
+        />
 
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s45} />
-                </div>
-                <div>
-                    <img src={s46} />
-                </div>
-                <div>
-                    <img src={s47} />
-                </div>
-            </Carousel>
-        </div>
+        <ImgComponent
+          images={[s15, s16]}
+          text={
+            "Dress made with fabric I painted in the style of Jean Dubuffet."
+          }
+        />
 
-        <p className={'carousel-text jumpsuit'}>
-            Pants made from thrifted denim. Includes pockets at the knee. Pattern based on vintage jeans.
-            Shirt upcycled from thrifted dress.
-        </p>
+        <ImgComponent
+          images={[s17, s18]}
+          text={
+            "Red cotton with gold polka dots dress made for a holiday dance."
+          }
+        />
 
-        {/*--------------*/}
-
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s40} />
-                </div>
-                <div>
-                    <img src={s41} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text jumpsuit'}>
-            Jacket made with thrifted denim. Pieced in classic star quilt block pattern.
-        </p>
-
-        {/*--------------*/}
-
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s42} />
-                </div>
-                <div>
-                    <img src={s43} />
-                </div>
-                <div>
-                    <img src={s44} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text jumpsuit'}>
-            White and red pattern set made from thrifted fabric.
-        </p>
-
-        {/*--------------*/}
-
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s6} />
-                </div>
-                <div>
-                    <img src={s7} />
-                </div>
-                <div>
-                    <img src={s8} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text jumpsuit'}>
-            Shirt and skirt set. Shirt can be tied multiple ways.
-        </p>
-
-        {/*--------------*/}
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s11} />
-                </div>
-                <div>
-                    <img src={s12} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text jumpsuit'}>
-            Jacket made out of old ripped jeans.
-        </p>
-
-        {/*--------------*/}
-
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s13} />
-                </div>
-                <div>
-                    <img src={s14} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text  jumpsuit'}>
-            Renaissance style dress made from red flannel.
-        </p>
-
-        {/*--------------*/}
-
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s15} />
-                </div>
-                <div>
-                    <img src={s16} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text jumpsuit'}>
-            Dress made with fabric I painted in the style of Jean Dubuffet.
-        </p>
-
-        {/*--------------*/}
-
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s17} />
-                </div>
-                <div>
-                    <img src={s18} />
-                </div>
-            </Carousel>
-        </div>
-
-
-        <p className={'carousel-text jumpsuit'}>
-            Red cotton with gold polka dots dress made for a holiday dance.
-        </p>
-
-        {/*--------------*/}
-
-
-        <div className={'sewing-carousel'}>
-            <Carousel renderThumbs={() => []}>
-                <div>
-                    <img src={s19} />
-                </div>
-                <div>
-                    <img src={s20} />
-                </div>
-            </Carousel>
-        </div>
-
-        <p className={'carousel-text jumpsuit'}>
-            Blue velvet dress made for a holiday dance.
-        </p>
-
-        {/*--------------*/}
-
+        <ImgComponent
+          images={[s19, s20]}
+          text={
+            "Blue velvet dress made for a holiday dance."
+          }
+        />
 
         <img className={'sewing-carousel'} src={s22}/>
 
