@@ -37,12 +37,21 @@
     margin-right: auto;
 }
 
+.covid {
+    margin-bottom: -20px !important;
+}
+
 .menu {
     margin-left: 78%;
     margin-top: 35px;
 }
 
 .imageGroup {
+    position: relative;
+    margin-right: 25%;
+  }
+
+.pdfGroup {
     position: relative;
     margin-right: 25%;
   }
@@ -135,6 +144,34 @@
         margin-left: 40px;
         margin-right: 40px;
         margin-top: -30px;
+    }
+
+    [class*="hover-group"] {
+        display: inline-flex;
+        margin-left: 38% !important;
+        width: 130px;
+        margin-top: 5px !important;
+    }
+
+    .hover-btn {
+        z-index: 999 !important;
+    }
+
+    [class*="pdf-text"] {
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 10px;
+    }
+
+    [class*="react-pdf__Document"] {
+        width: 100%;
+        outline: 0.5px solid black;
+        margin-top: 20px;
+    }
+
+    [class*="react-pdf__Page__canvas"] {
+        width: 100% !important;
+        height: 100% !important;
     }
 
     [class*="invisionLink"] {
@@ -233,13 +270,46 @@
     }
     [class*="carousel-new"] {
         width:60%;
-        margin-left: 20px;
+        margin-left: 100px;
         margin-top:20px;
+    }
+
+    [class*="hover-group"] {
+        display:none !important;
+        margin-left: 30% !important;
+    }
+
+    [class*="pdf-text"] {
+        width: 60%;
+        margin-left: 100px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    [class*="react-pdf__Document"] {
+        width: 50%;
+        margin-left:100px;
+        outline: 0.5px solid black;
+        margin-top: 20px;
+    }
+
+    [class*="react-pdf__Page__canvas"] {
+        width: 100% !important;
+        height: 100% !important;
     }
 
     [class*="text-new"] {
         width:60%;
-        margin-left: 20px;
+        margin-left: 100px;
+    }
+
+    .doc:hover + .hover-group, .hover-group:hover {
+        position: absolute;
+        display: inline-flex !important;
+        background-color: white;
+        z-index: 10;
+        margin-left: 23% !important;
+        margin-top: -75px !important;
     }
 
     [class*="bio"] {
@@ -343,6 +413,38 @@
     [class*="sewing-carousel"] {
         width: 35%;
         margin-left:100px;
+    }
+
+    [class*="hover-group"] {
+        display:none !important;
+    }
+
+    .doc:hover + .hover-group, .hover-group:hover {
+        position: absolute;
+        display: inline-flex !important;
+        background-color: white;
+        z-index: 10;
+        margin-left: 27% !important;
+        margin-top: -75px !important;
+    }
+
+    .pdf-text {
+        position: absolute;
+        top: 10%;
+        width: 28%;
+        margin-left: 65%;
+    }
+
+    [class*="react-pdf__Document"] {
+        width: 50%;
+        margin-left:100px;
+        outline: 0.5px solid black;
+        margin-top: 20px;
+    }
+
+    [class*="react-pdf__Page__canvas"] {
+        width: 100% !important;
+        height: 100% !important;
     }
 
     [class*="carousel-text"] {
@@ -513,4 +615,23 @@ div.sticky {
 .pe {
     margin-top:60px;
     margin-bottom:-20px;
+}
+
+.doc {
+    z-index: -1;
+}
+
+.hover-btn {
+    border: none !important;
+    background-color: white !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.page-nums {
+    margin-top: 10px;
+}
+
+.hover-group {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

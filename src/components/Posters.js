@@ -21,12 +21,19 @@ import s17 from './images/GA/mahler.png';
 import s18 from './images/GA/jungle.png';
 import s19 from './images/GA/swamp.png';
 import s20 from './images/GA/red.png';
+import bee from './images/GA/bee2.png';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
 
 const IMAGES =
     [
+        {
+            src: bee,
+            width: 436,
+            height: 675,
+            caption: "Poster with typography elements and their definitions."
+        },
         {
             src: s18,
             width: 436,

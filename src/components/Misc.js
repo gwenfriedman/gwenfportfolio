@@ -1,6 +1,5 @@
 import React from "react";
 import Home from "./Home.js";
-import { Carousel } from "react-responsive-carousel";
 import m1 from "./images/misc/cb1.png";
 import m2 from "./images/misc/cb2.png";
 import m3 from "./images/misc/cb3.png";
@@ -9,12 +8,22 @@ import m5 from "./images/misc/dragon2.png";
 import m6 from "./images/misc/dragon1.png";
 import m7 from "./images/misc/octopus.png";
 import ImgComponent from "./ImgComponent";
+import PdfComponent from "./PdfComponent";
+import halloween from "./images/misc/halloween.pdf";
+import book from './images/book.pdf'
 
 class Mics extends React.Component {
   render() {
     return (
       <div>
         <Home open={"misc"} />
+
+        <PdfComponent
+          fileName={halloween}
+          text={"Book on the history of Halloween"}
+        />
+
+        <PdfComponent fileName={book} text={"Children's book about revelations in my life."} />
 
         <ImgComponent
           images={[m1, m2, m3, m4]}

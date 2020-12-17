@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Home from "./Home.js";
 import b1 from "./images/branding/peacock2.png";
 import b2 from "./images/branding/MM2.png";
@@ -13,12 +13,68 @@ import b10 from "./images/branding/pe2.png";
 import b11 from "./images/branding/pe3.png";
 import b12 from "./images/branding/pe4.png";
 import ImgComponent from "./ImgComponent";
+import helloFresh from "./images/branding/hellofresh-extension.pdf";
+import stitchKid from "./images/branding/stitch-kid.pdf";
+import nooworks from "./images/branding/nooworks-extension.pdf";
+import wonder from "./images/branding/wonder.pdf";
+import designfirm from "./images/branding/designfirm.pdf";
+import sofar from "./images/branding/sofar-extension.pdf";
+import essie from "./images/branding/essie-extension.pdf";
+import youthclub from "./images/branding/youthclub.pdf";
+import PdfComponent from "./PdfComponent";
+
 
 class Branding extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            numPages: 1,
+            pageNumber: 1
+        }
+    }
+
+    setNumPages(numPages) {
+        this.setState({
+            numPages: numPages
+        });
+    }
+
+    onDocumentLoadSuccess({ numPages }) {
+        this.setNumPages(numPages);
+      }
   render() {
     return (
       <div>
         <Home open={"branding"} />
+
+        <PdfComponent fileName={stitchKid}
+        text={"Identity and brand design for Stitch Kid."}/>
+
+        <PdfComponent fileName={helloFresh}
+        text={"Brand extension for Hello Fresh."}/>
+
+        <PdfComponent fileName={nooworks}
+        text={"Brand extension for nooworks."}/>
+
+        <PdfComponent fileName={wonder}
+        text={"Rebranding for Wonderbread"}/>
+
+        <PdfComponent fileName={designfirm}
+        text={"Branding for a design firm called Sehnucht Design"}/>
+
+        <PdfComponent fileName={sofar}
+        text={"Brand extension for Sofar Sounds."}/>
+
+        <PdfComponent fileName={youthclub}
+        text={"Rebranding for Boys & Girls Club of America"}/>
+
+        <PdfComponent fileName={essie}
+        text={"Brand extension for essie."}/>
+
+        
+        
+
+
         <ImgComponent
           images={[b4, b15, b5, b13, b14]}
           text={
