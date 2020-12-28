@@ -23,57 +23,68 @@ import essie from "./images/branding/essie-extension.pdf";
 import youthclub from "./images/branding/youthclub.pdf";
 import PdfComponent from "./PdfComponent";
 
-
 class Branding extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            numPages: 1,
-            pageNumber: 1
-        }
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      numPages: 1,
+      pageNumber: 1,
+    };
+  }
 
-    setNumPages(numPages) {
-        this.setState({
-            numPages: numPages
-        });
-    }
+  setNumPages(numPages) {
+    this.setState({
+      numPages: numPages,
+    });
+  }
 
-    onDocumentLoadSuccess({ numPages }) {
-        this.setNumPages(numPages);
-      }
+  onDocumentLoadSuccess({ numPages }) {
+    this.setNumPages(numPages);
+  }
   render() {
     return (
       <div>
         <Home open={"branding"} />
 
-        <PdfComponent fileName={stitchKid}
-        text={"Identity and brand design for Stitch Kid."}/>
+        <PdfComponent
+          fileName={stitchKid}
+          text={"Identity and brand design for Stitch Kid."}
+        />
 
-        <PdfComponent fileName={helloFresh}
-        text={"Brand extension for Hello Fresh."}/>
+        <PdfComponent
+          fileName={helloFresh}
+          text={"Brand extension for Hello Fresh."}
+        />
 
-        <PdfComponent fileName={nooworks}
-        text={"Brand extension for nooworks."}/>
+        <PdfComponent
+          fileName={nooworks}
+          text={"Brand extension for nooworks."}
+        />
 
-        <PdfComponent fileName={wonder}
-        text={"Rebranding for Wonderbread"}/>
+        <div className={"group-project"}>
+          <PdfComponent fileName={wonder} text={"Rebranding for Wonderbread"} />
+        </div>
 
-        <PdfComponent fileName={designfirm}
-        text={"Branding for a design firm called Sehnucht Design"}/>
+        <div className={"group-project"}>
+          <PdfComponent
+            fileName={designfirm}
+            text={"Branding for a design firm called Sehnucht Design"}
+          />
+        </div>
 
-        <PdfComponent fileName={sofar}
-        text={"Brand extension for Sofar Sounds."}/>
+        <PdfComponent
+          fileName={sofar}
+          text={"Brand extension for Sofar Sounds."}
+        />
 
-        <PdfComponent fileName={youthclub}
-        text={"Rebranding for Boys & Girls Club of America"}/>
+        <div className={"group-project"}>
+          <PdfComponent
+            fileName={youthclub}
+            text={"Rebranding for Boys & Girls Club of America"}
+          />
+        </div>
 
-        <PdfComponent fileName={essie}
-        text={"Brand extension for essie."}/>
-
-        
-        
-
+        <PdfComponent fileName={essie} text={"Brand extension for essie."} />
 
         <ImgComponent
           images={[b4, b15, b5, b13, b14]}

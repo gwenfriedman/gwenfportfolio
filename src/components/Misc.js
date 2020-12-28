@@ -10,7 +10,7 @@ import m7 from "./images/misc/octopus.png";
 import ImgComponent from "./ImgComponent";
 import PdfComponent from "./PdfComponent";
 import halloween from "./images/misc/halloween.pdf";
-import book from './images/book.pdf'
+import book from "./images/book.pdf";
 
 class Mics extends React.Component {
   render() {
@@ -18,12 +18,19 @@ class Mics extends React.Component {
       <div>
         <Home open={"misc"} />
 
-        <PdfComponent
-          fileName={halloween}
-          text={"Book on the history of Halloween"}
-        />
+        <div className={"halloween"}>
+          <PdfComponent
+            fileName={halloween}
+            text={"Book on the history of Halloween"}
+          />
+        </div>
 
-        <PdfComponent fileName={book} text={"Children's book about revelations in my life."} />
+        <div className={"personal-book"}>
+          <PdfComponent
+            fileName={book}
+            text={"Children's book about revelations in my life."}
+          />
+        </div>
 
         <ImgComponent
           images={[m1, m2, m3, m4]}

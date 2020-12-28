@@ -58,24 +58,24 @@ class PdfComponent extends React.Component {
         </div>
         <div className={"hover-group row"}>
           <button
-          className={'hover-btn'}
+            className={"hover-btn"}
             type="button"
             disabled={this.state.pageNumber <= 1}
             onClick={this.previousPage.bind(this)}
           >
-            {'\<'}
+            {"<"}
           </button>
-          <p className={'page-nums'}>
+          <p className={"page-nums"}>
             {this.state.pageNumber || (this.state.numPages ? 1 : "--")} of{" "}
             {this.state.numPages || "--"}
           </p>
           <button
-          className={'hover-btn'}
+            className={"hover-btn"}
             type="button"
             disabled={this.state.pageNumber >= this.state.numPages}
             onClick={this.nextPage.bind(this)}
           >
-            {'\>'}
+            {">"}
           </button>
         </div>
         <p className={"pdf-text"}> {this.props.text}</p>
